@@ -98,3 +98,9 @@ Special thanks to the Drexel University students who participated in the happine
 ---
 
 *← Return to [Home](index.qmd)*
+
+
+<div class="sidebar-authors">
+<div><img src="images/upenn.jpg" alt="Penn" style="height: 26px;"></div>
+<div><a href="index.qmd#contributors">Fan Yang & Zhiyuan Zhao</a></div>
+</div>

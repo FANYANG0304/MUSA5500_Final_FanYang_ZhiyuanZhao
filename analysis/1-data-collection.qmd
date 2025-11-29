@@ -369,3 +369,9 @@ There's an inherent limitation in using Census data at the tract level. Philadel
 After completing all data collection steps, we produce a unified dataset containing approximately 40,000 observations. Each point carries 6 visual features (from semantic segmentation, covered next), 8 socioeconomic features (from Census), and a PU Learning label indicating whether the point is a labeled happiness location or unlabeled.
 
 This dataset forms the foundation for our analysis of what makes places feel happy.
+
+
+<div class="sidebar-authors">
+<div><img src="../images/upenn.jpg" alt="Penn" style="height: 26px;"></div>
+<div><a href="../index.qmd#contributors">Fan Yang & Zhiyuan Zhao</a></div>
+</div>

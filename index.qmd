@@ -300,15 +300,12 @@ Weitzman School of Design, University of Pennsylvania
 ::: {.project-info}
 **Course:** MUSA 5500 — Geospatial Data Science In Python
 
-**Repository:** [urban-happiness-prediction](https://github.com/yourusername/urban-happiness)
+**Repository:** [Traces of Joy](https://github.com/fanyang0304/MUSA5500_Final_FanYang_ZhiyuanZhao)
 :::
 
 :::
 
 ---
-
-::: {.closing-quote}
-:::
 
 ::: {.keywords-section}
 **Keywords:**

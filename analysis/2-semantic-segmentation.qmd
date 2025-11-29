@@ -331,3 +331,9 @@ Our feature extraction has limitations that affect interpretation. We measure si
 This stage transformed ~40,000 street view images into a structured dataset of 6 visual features per location. Happiness points have significantly more sky visibility and higher building density, but less road coverage—suggesting pedestrian-friendly, vibrant urban environments rather than quiet residential streets or car-dominated corridors.
 
 These visual features, combined with Census socioeconomic data, form the input for our PU Learning model.
+
+
+<div class="sidebar-authors">
+<div><img src="../images/upenn.jpg" alt="Penn" style="height: 26px;"></div>
+<div><a href="../index.qmd#contributors">Fan Yang & Zhiyuan Zhao</a></div>
+</div>

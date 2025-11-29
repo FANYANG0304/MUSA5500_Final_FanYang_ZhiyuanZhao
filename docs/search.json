@@ -54,7 +54,7 @@
     "href": "references.html#acknowledgments",
     "title": "References",
     "section": "Acknowledgments",
-    "text": "Acknowledgments\nThis research was conducted as part of MUSA 5500: Geospatial Data Science In Python at the University of Pennsylvania, Weitzman School of Design.\nSpecial thanks to the Drexel University students who participated in the happiness point survey, providing the foundation for this analysis.\n\n← Return to Home",
+    "text": "Acknowledgments\nThis research was conducted as part of MUSA 5500: Geospatial Data Science In Python at the University of Pennsylvania, Weitzman School of Design.\nSpecial thanks to the Drexel University students who participated in the happiness point survey, providing the foundation for this analysis.\n\n← Return to Home\n\n\n\n\n\nFan Yang & Zhiyuan Zhao",
     "crumbs": [
       "References"
     ]
@@ -124,7 +124,7 @@
     "href": "index.html#contributors",
     "title": "Traces of Joy",
     "section": "Contributors",
-    "text": "Contributors\n\n\n\nFY\n\n\nFan Yang\nMUSA Student\nWeitzman School of Design, University of Pennsylvania\n\n\n\n\nZZ\n\n\nZhiyuan Zhao\nMUSA Student\nWeitzman School of Design, University of Pennsylvania\n\n\n\n\nCourse: MUSA 5500 — Geospatial Data Science In Python\nRepository: urban-happiness-prediction",
+    "text": "Contributors\n\n\n\nFY\n\n\nFan Yang\nMUSA Student\nWeitzman School of Design, University of Pennsylvania\n\n\n\n\nZZ\n\n\nZhiyuan Zhao\nMUSA Student\nWeitzman School of Design, University of Pennsylvania\n\n\n\n\nCourse: MUSA 5500 — Geospatial Data Science In Python\nRepository: Traces of Joy",
     "crumbs": [
       "Home"
     ]
@@ -222,7 +222,7 @@
     "href": "analysis/3-pu-learning.html#what-weve-built",
     "title": "PU Learning",
     "section": "What We’ve Built",
-    "text": "What We’ve Built\nThe PU Learning approach successfully identifies features that distinguish happiness points. Distance-based reliable negative identification combined with class-balanced logistic regression achieves AUC = 0.968. The key positive factors are building density, college education rate, and sky visibility. The key negative factors are owner-occupancy rate, poverty rate, and road coverage. We’ve generated happiness scores for all ~40,000 sampling points, enabling city-wide mapping of predicted happiness.\nThe next section presents the full results and discusses what these patterns mean for understanding—and perhaps improving—urban environments.",
+    "text": "What We’ve Built\nThe PU Learning approach successfully identifies features that distinguish happiness points. Distance-based reliable negative identification combined with class-balanced logistic regression achieves AUC = 0.968. The key positive factors are building density, college education rate, and sky visibility. The key negative factors are owner-occupancy rate, poverty rate, and road coverage. We’ve generated happiness scores for all ~40,000 sampling points, enabling city-wide mapping of predicted happiness.\nThe next section presents the full results and discusses what these patterns mean for understanding—and perhaps improving—urban environments.\n\n\n\n\n\nFan Yang & Zhiyuan Zhao",
     "crumbs": [
       "Methodology",
       "PU Learning Model"
@@ -299,7 +299,7 @@
     "href": "analysis/1-data-collection.html#the-final-dataset",
     "title": "Data Collection",
     "section": "The Final Dataset",
-    "text": "The Final Dataset\nAfter completing all data collection steps, we produce a unified dataset containing approximately 40,000 observations. Each point carries 6 visual features (from semantic segmentation, covered next), 8 socioeconomic features (from Census), and a PU Learning label indicating whether the point is a labeled happiness location or unlabeled.\nThis dataset forms the foundation for our analysis of what makes places feel happy.",
+    "text": "The Final Dataset\nAfter completing all data collection steps, we produce a unified dataset containing approximately 40,000 observations. Each point carries 6 visual features (from semantic segmentation, covered next), 8 socioeconomic features (from Census), and a PU Learning label indicating whether the point is a labeled happiness location or unlabeled.\nThis dataset forms the foundation for our analysis of what makes places feel happy.\n\n\n\n\n\nFan Yang & Zhiyuan Zhao",
     "crumbs": [
       "Methodology",
       "Data Collection"
@@ -398,7 +398,7 @@
     "href": "analysis/2-semantic-segmentation.html#what-weve-learned",
     "title": "Semantic Segmentation",
     "section": "What We’ve Learned",
-    "text": "What We’ve Learned\nThis stage transformed ~40,000 street view images into a structured dataset of 6 visual features per location. Happiness points have significantly more sky visibility and higher building density, but less road coverage—suggesting pedestrian-friendly, vibrant urban environments rather than quiet residential streets or car-dominated corridors.\nThese visual features, combined with Census socioeconomic data, form the input for our PU Learning model.",
+    "text": "What We’ve Learned\nThis stage transformed ~40,000 street view images into a structured dataset of 6 visual features per location. Happiness points have significantly more sky visibility and higher building density, but less road coverage—suggesting pedestrian-friendly, vibrant urban environments rather than quiet residential streets or car-dominated corridors.\nThese visual features, combined with Census socioeconomic data, form the input for our PU Learning model.\n\n\n\n\n\nFan Yang & Zhiyuan Zhao",
     "crumbs": [
       "Methodology",
       "Semantic Segmentation"
@@ -519,7 +519,7 @@
     "href": "analysis/4-results.html#a-final-reflection",
     "title": "Results & Discussion",
     "section": "A Final Reflection",
-    "text": "A Final Reflection\nThis project demonstrates how street-level imagery and machine learning can be combined to study urban emotion at scale. It extends psychological theories of place and well-being into a computational framework, transforming visual data into measurable indicators of how cities make people feel.\nBut we should be humble about what we’ve captured. Everyone living in Philadelphia has their own list of happy places, and there is never a single right answer to what happiness means. The Cat Park with its friendly felines, the bustling atmosphere of Mango Mango Desserts, the cozy corner of Maison Sweet where you might stay longer than planned—these are not places we can fully quantify. A grandmother’s kitchen. A spot by the river where someone proposed. The bench where you sat crying after a breakup and a stranger offered you a tissue.\nHappiness is environmental, yes. But it’s also biographical. Our models can find the patterns that connect happy places; they cannot explain why a particular place became your happy place.\nWhat we hope is that by mapping these patterns, we might help create more spaces where happiness can happen—even if we can’t predict exactly who will find joy there, or why.\nA lot of things need fixing in Philly, but there are a lot of good things here.",
+    "text": "A Final Reflection\nThis project demonstrates how street-level imagery and machine learning can be combined to study urban emotion at scale. It extends psychological theories of place and well-being into a computational framework, transforming visual data into measurable indicators of how cities make people feel.\nBut we should be humble about what we’ve captured. Everyone living in Philadelphia has their own list of happy places, and there is never a single right answer to what happiness means. The Cat Park with its friendly felines, the bustling atmosphere of Mango Mango Desserts, the cozy corner of Maison Sweet where you might stay longer than planned—these are not places we can fully quantify. A grandmother’s kitchen. A spot by the river where someone proposed. The bench where you sat crying after a breakup and a stranger offered you a tissue.\nHappiness is environmental, yes. But it’s also biographical. Our models can find the patterns that connect happy places; they cannot explain why a particular place became your happy place.\nWhat we hope is that by mapping these patterns, we might help create more spaces where happiness can happen—even if we can’t predict exactly who will find joy there, or why.\nA lot of things need fixing in Philly, but there are a lot of good things here.\n\n\n\n\n\nFan Yang & Zhiyuan Zhao",
     "crumbs": [
       "Results"
     ]
@@ -589,7 +589,7 @@
     "href": "introduction.html#what-we-hope-to-achieve",
     "title": "Introduction",
     "section": "What We Hope to Achieve",
-    "text": "What We Hope to Achieve\nEveryone living in Philadelphia has their own list of happy places, and there is never a single right answer to what happiness means. What we hope to do is to share that happiness—to map it, visualize it, and, in our own way, help create more of it.\nThrough this integration of psychological insight and data-driven urban analysis, the project aspires to reveal how the city’s visual form mirrors its emotional landscape—and perhaps, to help uncover new happy places waiting to be found.\n\nContinue to Methodology: Data Collection →",
+    "text": "What We Hope to Achieve\nEveryone living in Philadelphia has their own list of happy places, and there is never a single right answer to what happiness means. What we hope to do is to share that happiness—to map it, visualize it, and, in our own way, help create more of it.\nThrough this integration of psychological insight and data-driven urban analysis, the project aspires to reveal how the city’s visual form mirrors its emotional landscape—and perhaps, to help uncover new happy places waiting to be found.\n\nContinue to Methodology: Data Collection →\n\n\n\n\n\nFan Yang & Zhiyuan Zhao",
     "crumbs": [
       "Introduction"
     ]

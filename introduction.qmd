@@ -71,3 +71,8 @@ Through this integration of psychological insight and data-driven urban analysis
 ---
 
 *Continue to [Methodology: Data Collection](analysis/1-data-collection.qmd) →*
+
+<div class="sidebar-authors">
+<div><img src="images/upenn.jpg" alt="Penn" style="height: 26px;"></div>
+<div><a href="index.qmd#contributors">Fan Yang & Zhiyuan Zhao</a></div>
+</div>

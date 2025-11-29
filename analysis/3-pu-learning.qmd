@@ -359,3 +359,9 @@ The distribution is **right-skewed**, with most points receiving low happiness s
 The PU Learning approach successfully identifies features that distinguish happiness points. Distance-based reliable negative identification combined with class-balanced logistic regression achieves AUC = 0.968. The key positive factors are building density, college education rate, and sky visibility. The key negative factors are owner-occupancy rate, poverty rate, and road coverage. We've generated happiness scores for all ~40,000 sampling points, enabling city-wide mapping of predicted happiness.
 
 The next section presents the full results and discusses what these patterns mean for understanding—and perhaps improving—urban environments.
+
+
+<div class="sidebar-authors">
+<div><img src="../images/upenn.jpg" alt="Penn" style="height: 26px;"></div>
+<div><a href="../index.qmd#contributors">Fan Yang & Zhiyuan Zhao</a></div>
+</div>
