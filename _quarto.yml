@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Urban Happiness Prediction"
+  title: "Traces of Joy"
   search: true
   repo-url: https://github.com/yourusername/urban-happiness
   repo-actions: [source]

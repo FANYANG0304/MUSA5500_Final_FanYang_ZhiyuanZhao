@@ -62,7 +62,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Urban Happiness Prediction",
+    "title": "Traces of Joy",
     "section": "",
     "text": "Traces of Joy\n\n\nExploring Urban Happiness through Machine Vision and Human Feeling\n\n\nWhat makes a person truly happy? It might be a shared meal with friends, or simply standing in a place that feels right. This project maps the emotional geography of Philadelphia—combining street-view imagery, semantic segmentation, and machine learning to understand what makes urban environments feel “happy.”\n“A lot of things need fixing in Philly, but there are a lot of good things here.”\n\n\nView Methodology Explore Results",
     "crumbs": [
@@ -72,7 +72,7 @@
   {
     "objectID": "index.html#abstract",
     "href": "index.html#abstract",
-    "title": "Urban Happiness Prediction",
+    "title": "Traces of Joy",
     "section": "Abstract",
     "text": "Abstract\n\nThe Swiss psychoanalyst Carl Jung wrote extensively about the relationship between our inner world and the external environment, suggesting that this connection is vital to psychological health. Across cultures and histories, “happy places” share certain universal features—they are often safe, aesthetically pleasing, socially engaging, and meaningful.\nThis study explores whether these emotional patterns can be recognized from a city’s visual appearance. Using 28 happiness points identified by Drexel University students and approximately 40,000 road sampling points across Philadelphia, we employ a Positive-Unlabeled (PU) Learning approach that treats unlabeled locations as potentially happy rather than definitively unhappy. We extract visual features from Google Street View panoramic imagery using semantic segmentation (SegFormer) and combine them with Census tract-level socioeconomic variables to build predictive models.\nThe result is an emotional geography of Philadelphia—a map not of buildings or roads, but of feelings.",
     "crumbs": [
@@ -82,7 +82,7 @@
   {
     "objectID": "index.html#key-findings",
     "href": "index.html#key-findings",
-    "title": "Urban Happiness Prediction",
+    "title": "Traces of Joy",
     "section": "Key Findings",
     "text": "Key Findings\n\n\n\n✓\n\n\nPositive Predictors\nBuilding density, sky visibility, and education levels positively predict happiness — suggesting urban vitality matters.\n\n\n\n\n✗\n\n\nNegative Predictors\nOwner-occupancy rate, road coverage, and poverty rate are negative predictors — challenging conventional assumptions.\n\n\n\n\n💡\n\n\nKey Insight\nRental-heavy urban areas may offer more social opportunities and public amenities than owner-occupied suburbs.",
     "crumbs": [
@@ -92,7 +92,7 @@
   {
     "objectID": "index.html#research-framework",
     "href": "index.html#research-framework",
-    "title": "Urban Happiness Prediction",
+    "title": "Traces of Joy",
     "section": "Research Framework",
     "text": "Research Framework\n\n\n\n01\n\n\nData Collection\nSampling points generated every 200m along Philadelphia streets. GSV panoramic images collected via Google Maps API with 20-process parallel downloading.\n\n\n\n\n02\n\n\nSemantic Segmentation\nSegFormer-B0 model extracts 6 visual features: sky ratio, green view index, building ratio, road ratio, vehicle ratio, and person ratio.\n\n\n\n\n03\n\n\nCensus Integration\nACS 5-year estimates provide socioeconomic context: income, education, demographics, housing characteristics at tract level.\n\n\n\n\n04\n\n\nPU Learning Model\nPositive-Unlabeled learning framework with Logistic Regression and Random Forest, using 5-fold cross-validation.",
     "crumbs": [
@@ -102,7 +102,7 @@
   {
     "objectID": "index.html#preview",
     "href": "index.html#preview",
-    "title": "Urban Happiness Prediction",
+    "title": "Traces of Joy",
     "section": "Preview: Feature Importance",
     "text": "Preview: Feature Importance\n\n\nOur analysis reveals which urban characteristics most strongly predict happiness. The visualization shows standardized coefficients from the logistic regression model.\nTop Positive Factors:\n\nBuilding Ratio (+1.00)\nCollege Education (+0.70)\nSky Visibility (+0.58)\n\nTop Negative Factors:\n\nOwner Occupancy (-2.10)\nPoverty Rate (-1.28)\nRoad Coverage (-1.23)\n\nSee Full Results →\n\n\n\n\n\nFeature Effects on Happiness",
     "crumbs": [
@@ -112,7 +112,7 @@
   {
     "objectID": "index.html#navigation",
     "href": "index.html#navigation",
-    "title": "Urban Happiness Prediction",
+    "title": "Traces of Joy",
     "section": "Navigation",
     "text": "Navigation\n\n\n📖 Introduction\nBackground on urban happiness research and the Philadelphia context.\nRead More →\n\n\n📊 Methodology\nDetailed technical approach including data pipeline and model architecture.\nExplore →\n\n\n📈 Results\nComplete findings, visualizations, and interpretation of model outputs.\nView Results →\n\n\n📚 References\nAcademic sources and data documentation.\nSee References →",
     "crumbs": [
@@ -122,7 +122,7 @@
   {
     "objectID": "index.html#contributors",
     "href": "index.html#contributors",
-    "title": "Urban Happiness Prediction",
+    "title": "Traces of Joy",
     "section": "Contributors",
     "text": "Contributors\n\n\n\nFY\n\n\nFan Yang\nMUSA Student\nWeitzman School of Design, University of Pennsylvania\n\n\n\n\nZZ\n\n\nZhiyuan Zhao\nMUSA Student\nWeitzman School of Design, University of Pennsylvania\n\n\n\n\nCourse: MUSA 5500 — Geospatial Data Science In Python\nRepository: urban-happiness-prediction",
     "crumbs": [
