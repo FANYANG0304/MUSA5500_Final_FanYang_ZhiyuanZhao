@@ -531,7 +531,7 @@ hr {
    HERO SECTION - The Pudding Style
    ============================================ */
 .hero-section {
-  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  background: linear-gradient(135deg, #f3f2ee 0%, #efeee8 100%);
   padding: 3.5rem 2.5rem;
   margin: -1rem -1rem 2.5rem -1rem;
   border-radius: 0 0 var(--radius-lg) var(--radius-lg);
@@ -628,7 +628,7 @@ hr {
   background: white;
   border-radius: var(--radius-md);
   padding: 1.5rem;
-  text-align: center;
+  text-align: left !important;
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
   border: 1px solid var(--border-light);
@@ -662,6 +662,7 @@ hr {
   font-size: 0.85rem;
   color: var(--text-muted);
   margin-top: 0.25rem;
+  text-align: left !important;
 }
 
 /* ============================================
@@ -1318,4 +1319,16 @@ hr {
 #quarto-sidebar .sidebar-item-container {
   padding: 0 !important;
   margin: 0 !important;
+}
+
+/* ============================================
+   METRIC CARD TEXT ALIGNMENT FIX
+   ============================================ */
+.metric-card p,
+.metric-card .metric-desc,
+.metric-card .metric-desc p,
+.metric-icon p,
+.metric-value p,
+.metric-label p {
+  text-align: left !important;
 }
