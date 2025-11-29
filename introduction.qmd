@@ -1,0 +1,73 @@
+---
+title: "Introduction"
+---
+
+## What Makes a Place Feel Happy?
+
+What makes a person truly happy? It might be a good night's sleep, a shared meal with friends, or simply standing in a place that feels right. The Swiss psychoanalyst Carl Jung wrote extensively about the relationship between our inner world and the external environment, suggesting that this connection is vital to psychological health. In simple terms, intricate neural pathways transform sensory input and cognitive processing into a direct and embodied awareness: *I am happy here.*
+
+Across cultures and histories, "happy places" share certain universal features. They are often safe, aesthetically pleasing, socially engaging, and meaningful. While beauty and safety contribute to a sense of well-being, humanistic psychologists such as Abraham Maslow emphasized the deeper importance of belonging, social connection, and purpose. Happiness, therefore, arises not merely from visual or material comfort, but from an interplay of physical, emotional, and social dimensions of place.
+
+## Philadelphia: A City of Brotherly Love
+
+This connection between environment and emotion is not abstract. In Philadelphia—the city of brotherly love and sisterly affection—it has recently taken tangible form through the work of psychology students at Drexel University's Happiness Lab. In their participatory mapping project, 243 students identified local landmarks and hidden corners where they felt happiest. The resulting map curated 28 "happy places" across the city, ranging from small neighborhood parks to cozy cafés.
+
+Among them, the **Cat Park** on North Natrona Street was cherished for its quiet charm and friendly felines, while **Mango Mango Desserts** in Chinatown was celebrated for its bustling atmosphere and sweet delights. A student favorite, **Maison Sweet** on Chestnut Street, was described as "the kind of café where you might stay longer than planned."
+
+These findings highlight that happiness in the urban environment is both universal and deeply personal. Each place evokes unique emotional responses shaped by memory, sensory experience, and social interaction. Yet collectively, they sketch an emotional geography of Philadelphia—a map not of buildings or roads, but of feelings.
+
+## Research Questions
+
+Building upon this psychological and experiential foundation, our project seeks to explore these patterns from a computational and visual perspective. Rather than relying solely on self-reported happiness, we aim to analyze how the physical appearance of streets—captured through street-view imagery—relates to the kinds of environments people describe as "happy places."
+
+This study addresses three core questions:
+
+1. **Can we predict urban happiness from measurable features?**
+   Using machine learning, can we distinguish locations that people identify as "happy" from random street locations based on visual and socioeconomic characteristics?
+
+2. **What visual features characterize happy places?**
+   Do happy locations have more vegetation, more sky visibility, less road coverage? How do building density and vehicle presence relate to happiness?
+
+3. **What is the relationship between neighborhood demographics and happiness?**
+   How do income, education, homeownership, and other socioeconomic factors interact with the physical environment to produce happy places?
+
+## The Challenge: From Feeling to Data
+
+### The Happiness Dataset
+
+Our positive samples come from the Drexel University survey—28 unique happiness points across Philadelphia, concentrated in urban cores, parks, and waterfront areas. These represent places where real people reported genuine emotional connections.
+
+### The Problem of Unlabeled Data
+
+A critical insight motivates our methodological approach: **the absence of a happiness label does not mean a location is unhappy.** The ~40,000 road sampling points throughout Philadelphia are *unlabeled*, not *negative*. Someone might feel just as happy at an unlabeled park as at a labeled one—they simply weren't surveyed.
+
+This is why we employ Positive-Unlabeled (PU) Learning rather than standard binary classification. PU Learning treats unlabeled data appropriately, avoiding the bias that would result from assuming all non-labeled points are unhappy.
+
+### Data Sources
+
+| Source | Description | Coverage |
+|--------|-------------|----------|
+| **Happiness Points** | Student-identified happy locations | 28 points |
+| **Road Network** | Philadelphia street centerlines | 47,000 segments |
+| **Google Street View** | 360° panoramic imagery | ~40,000 images |
+| **Census ACS 2022** | Socioeconomic variables | 384 tracts |
+
+## Theoretical Framework
+
+Our approach bridges several research traditions:
+
+**Environmental Psychology**: Research on restorative environments suggests that natural elements (vegetation, sky, water) promote psychological well-being. We operationalize this through semantic segmentation of street view imagery.
+
+**Urban Vitality**: Jane Jacobs' work emphasizes that lively, mixed-use neighborhoods foster human connection. Our finding that building density predicts happiness (while owner-occupancy does not) aligns with this perspective.
+
+**Spatial Analytics**: By combining computer vision with spatial modeling, we can scale subjective assessments to city-wide predictions, enabling evidence-based planning interventions.
+
+## What We Hope to Achieve
+
+Everyone living in Philadelphia has their own list of happy places, and there is never a single right answer to what happiness means. What we hope to do is to share that happiness—to map it, visualize it, and, in our own way, help create more of it.
+
+Through this integration of psychological insight and data-driven urban analysis, the project aspires to reveal how the city's visual form mirrors its emotional landscape—and perhaps, to help uncover new happy places waiting to be found.
+
+---
+
+*Continue to [Methodology: Data Collection](analysis/1-data-collection.qmd) →*

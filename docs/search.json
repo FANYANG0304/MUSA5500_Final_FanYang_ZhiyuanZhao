@@ -1,0 +1,597 @@
+[
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Happiness Points Collected via survey from Drexel University students as part of urban experience research. Students identified locations in Philadelphia that evoked feelings of happiness.\nGoogle Street View Imagery Accessed via Google Street View API. Panoramic images (3328 × 1664 pixels) downloaded using tile-based retrieval method at zoom level 3.\n\nGoogle. (2024). Street View Static API. https://developers.google.com/maps/documentation/streetview\n\nU.S. Census Bureau American Community Survey 5-year estimates (2018-2022) at census tract level for Philadelphia County.\n\nU.S. Census Bureau. (2023). American Community Survey 5-Year Data (2018-2022). https://www.census.gov/programs-surveys/acs\n\nPhiladelphia Road Network OpenDataPhilly street centerlines dataset.\n\nCity of Philadelphia. (2024). Street Centerlines. https://opendataphilly.org/datasets/street-centerlines/",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "references.html#data-sources",
+    "href": "references.html#data-sources",
+    "title": "References",
+    "section": "",
+    "text": "Happiness Points Collected via survey from Drexel University students as part of urban experience research. Students identified locations in Philadelphia that evoked feelings of happiness.\nGoogle Street View Imagery Accessed via Google Street View API. Panoramic images (3328 × 1664 pixels) downloaded using tile-based retrieval method at zoom level 3.\n\nGoogle. (2024). Street View Static API. https://developers.google.com/maps/documentation/streetview\n\nU.S. Census Bureau American Community Survey 5-year estimates (2018-2022) at census tract level for Philadelphia County.\n\nU.S. Census Bureau. (2023). American Community Survey 5-Year Data (2018-2022). https://www.census.gov/programs-surveys/acs\n\nPhiladelphia Road Network OpenDataPhilly street centerlines dataset.\n\nCity of Philadelphia. (2024). Street Centerlines. https://opendataphilly.org/datasets/street-centerlines/",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "references.html#methods-models",
+    "href": "references.html#methods-models",
+    "title": "References",
+    "section": "Methods & Models",
+    "text": "Methods & Models\n\nSemantic Segmentation\nSegFormer Xie, E., Wang, W., Yu, Z., Anandkumar, A., Alvarez, J. M., & Luo, P. (2021). SegFormer: Simple and efficient design for semantic segmentation with transformers. Advances in Neural Information Processing Systems, 34, 12077-12090.\n\nModel: nvidia/segformer-b0-finetuned-ade-512-512\nHugging Face: https://huggingface.co/nvidia/segformer-b0-finetuned-ade-512-512\n\nADE20K Dataset Zhou, B., Zhao, H., Puig, X., Fidler, S., Barriuso, A., & Torralba, A. (2017). Scene parsing through ADE20K dataset. Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 633-641.\n\n\nPositive-Unlabeled Learning\nBekker, J., & Davis, J. (2020). Learning from positive and unlabeled data: A survey. Machine Learning, 109(4), 719-760.\nElkan, C., & Noto, K. (2008). Learning classifiers from only positive and unlabeled data. Proceedings of the 14th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 213-220.",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "references.html#urban-theory",
+    "href": "references.html#urban-theory",
+    "title": "References",
+    "section": "Urban Theory",
+    "text": "Urban Theory\n\nEnvironmental Psychology\nKaplan, R., & Kaplan, S. (1989). The Experience of Nature: A Psychological Perspective. Cambridge University Press.\nUlrich, R. S. (1984). View through a window may influence recovery from surgery. Science, 224(4647), 420-421.\n\n\nUrban Vitality\nJacobs, J. (1961). The Death and Life of Great American Cities. Random House.\nGehl, J. (2011). Life Between Buildings: Using Public Space. Island Press.\n\n\nStreet-Level Imagery Analysis\nLi, X., Zhang, C., Li, W., Ricard, R., Meng, Q., & Zhang, W. (2015). Assessing street-level urban greenery using Google Street View and a modified green view index. Urban Forestry & Urban Greening, 14(3), 675-685.\nRzotkiewicz, A., Pearson, A. L., Dougherty, B. V., Shortridge, A., & Wilson, N. (2018). Systematic review of the use of Google Street View in health research: Major themes, strengths, weaknesses and possibilities for future research. Health & Place, 52, 240-246.",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "references.html#software-tools",
+    "href": "references.html#software-tools",
+    "title": "References",
+    "section": "Software & Tools",
+    "text": "Software & Tools\n\nPython Libraries\n\nGeoPandas: Jordahl, K., et al. (2020). geopandas/geopandas: v0.8.1. Zenodo.\nTransformers: Wolf, T., et al. (2020). Transformers: State-of-the-art natural language processing. EMNLP 2020.\nScikit-learn: Pedregosa, F., et al. (2011). Scikit-learn: Machine learning in Python. JMLR, 12, 2825-2830.\nPyTorch: Paszke, A., et al. (2019). PyTorch: An imperative style, high-performance deep learning library. NeurIPS 2019.\n\n\n\nVisualization\n\nMatplotlib: Hunter, J. D. (2007). Matplotlib: A 2D graphics environment. Computing in Science & Engineering, 9(3), 90-95.\nSeaborn: Waskom, M. L. (2021). seaborn: statistical data visualization. JOSS, 6(60), 3021.\n\n\n\nWebsite\nBuilt with Quarto open-source scientific publishing system.",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "references.html#acknowledgments",
+    "href": "references.html#acknowledgments",
+    "title": "References",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nThis research was conducted as part of MUSA 5500: Geospatial Data Science In Python at the University of Pennsylvania, Weitzman School of Design.\nSpecial thanks to the Drexel University students who participated in the happiness point survey, providing the foundation for this analysis.\n\n← Return to Home",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Urban Happiness Prediction",
+    "section": "",
+    "text": "Traces of Joy\n\n\nExploring Urban Happiness through Machine Vision and Human Feeling\n\n\nWhat makes a person truly happy? It might be a shared meal with friends, or simply standing in a place that feels right. This project maps the emotional geography of Philadelphia—combining street-view imagery, semantic segmentation, and machine learning to understand what makes urban environments feel “happy.”\n“A lot of things need fixing in Philly, but there are a lot of good things here.”\n\n\nView Methodology Explore Results",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#abstract",
+    "href": "index.html#abstract",
+    "title": "Urban Happiness Prediction",
+    "section": "Abstract",
+    "text": "Abstract\n\nThe Swiss psychoanalyst Carl Jung wrote extensively about the relationship between our inner world and the external environment, suggesting that this connection is vital to psychological health. Across cultures and histories, “happy places” share certain universal features—they are often safe, aesthetically pleasing, socially engaging, and meaningful.\nThis study explores whether these emotional patterns can be recognized from a city’s visual appearance. Using 28 happiness points identified by Drexel University students and approximately 40,000 road sampling points across Philadelphia, we employ a Positive-Unlabeled (PU) Learning approach that treats unlabeled locations as potentially happy rather than definitively unhappy. We extract visual features from Google Street View panoramic imagery using semantic segmentation (SegFormer) and combine them with Census tract-level socioeconomic variables to build predictive models.\nThe result is an emotional geography of Philadelphia—a map not of buildings or roads, but of feelings.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#key-findings",
+    "href": "index.html#key-findings",
+    "title": "Urban Happiness Prediction",
+    "section": "Key Findings",
+    "text": "Key Findings\n\n\n\n✓\n\n\nPositive Predictors\nBuilding density, sky visibility, and education levels positively predict happiness — suggesting urban vitality matters.\n\n\n\n\n✗\n\n\nNegative Predictors\nOwner-occupancy rate, road coverage, and poverty rate are negative predictors — challenging conventional assumptions.\n\n\n\n\n💡\n\n\nKey Insight\nRental-heavy urban areas may offer more social opportunities and public amenities than owner-occupied suburbs.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#research-framework",
+    "href": "index.html#research-framework",
+    "title": "Urban Happiness Prediction",
+    "section": "Research Framework",
+    "text": "Research Framework\n\n\n\n01\n\n\nData Collection\nSampling points generated every 200m along Philadelphia streets. GSV panoramic images collected via Google Maps API with 20-process parallel downloading.\n\n\n\n\n02\n\n\nSemantic Segmentation\nSegFormer-B0 model extracts 6 visual features: sky ratio, green view index, building ratio, road ratio, vehicle ratio, and person ratio.\n\n\n\n\n03\n\n\nCensus Integration\nACS 5-year estimates provide socioeconomic context: income, education, demographics, housing characteristics at tract level.\n\n\n\n\n04\n\n\nPU Learning Model\nPositive-Unlabeled learning framework with Logistic Regression and Random Forest, using 5-fold cross-validation.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#preview",
+    "href": "index.html#preview",
+    "title": "Urban Happiness Prediction",
+    "section": "Preview: Feature Importance",
+    "text": "Preview: Feature Importance\n\n\nOur analysis reveals which urban characteristics most strongly predict happiness. The visualization shows standardized coefficients from the logistic regression model.\nTop Positive Factors:\n\nBuilding Ratio (+1.00)\nCollege Education (+0.70)\nSky Visibility (+0.58)\n\nTop Negative Factors:\n\nOwner Occupancy (-2.10)\nPoverty Rate (-1.28)\nRoad Coverage (-1.23)\n\nSee Full Results →\n\n\n\n\n\nFeature Effects on Happiness",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#navigation",
+    "href": "index.html#navigation",
+    "title": "Urban Happiness Prediction",
+    "section": "Navigation",
+    "text": "Navigation\n\n\n📖 Introduction\nBackground on urban happiness research and the Philadelphia context.\nRead More →\n\n\n📊 Methodology\nDetailed technical approach including data pipeline and model architecture.\nExplore →\n\n\n📈 Results\nComplete findings, visualizations, and interpretation of model outputs.\nView Results →\n\n\n📚 References\nAcademic sources and data documentation.\nSee References →",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#contributors",
+    "href": "index.html#contributors",
+    "title": "Urban Happiness Prediction",
+    "section": "Contributors",
+    "text": "Contributors\n\n\n\nFY\n\n\nFan Yang\nMUSA Student\nWeitzman School of Design, University of Pennsylvania\n\n\n\n\nZZ\n\n\nZhiyuan Zhao\nMUSA Student\nWeitzman School of Design, University of Pennsylvania\n\n\n\n\nCourse: MUSA 5500 — Geospatial Data Science In Python\nRepository: urban-happiness-prediction",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "analysis/3-pu-learning.html",
+    "href": "analysis/3-pu-learning.html",
+    "title": "PU Learning",
+    "section": "",
+    "text": "Traditional binary classification requires both positive and negative labeled examples. Our dataset contains 28 happiness points marked by survey respondents and ~40,000 road sampling points with unknown happiness status. The tempting approach would be to treat all unlabeled points as “not happy”—but this fundamentally misrepresents the data.\nThe critical insight: unlabeled does not mean negative. Many road sampling points might also be happy locations—they simply weren’t identified in the survey. A beautiful park bench, a cozy café corner, a tree-lined street with afternoon sun—any of these might bring joy to someone, but if no survey respondent happened to mention them, they remain unlabeled. Training a standard classifier with all unlabeled points as negatives would systematically bias the model against places that are happy but unrecognized.\nPositive-Unlabeled (PU) Learning addresses this by identifying “reliable negatives” from the unlabeled set—points that are genuinely unlikely to be happy places—and training classifiers using only these carefully selected negatives alongside the labeled positives.\n#| eval: false\n\nfrom scipy.spatial.distance import cdist\nimport numpy as np\n\nclass PULearningModel:\n    \"\"\"\n    Positive-Unlabeled Learning classifier for happiness prediction.\n    \n    Uses distance-based reliable negative identification followed by\n    standard classification with class balancing.\n    \"\"\"\n    \n    def __init__(self, reliable_neg_ratio=0.30):\n        \"\"\"\n        Parameters:\n        -----------\n        reliable_neg_ratio : float\n            Proportion of unlabeled samples to use as reliable negatives.\n            Higher values increase training set size but risk label noise.\n        \"\"\"\n        self.reliable_neg_ratio = reliable_neg_ratio\n        self.scaler = StandardScaler()",
+    "crumbs": [
+      "Methodology",
+      "PU Learning Model"
+    ]
+  },
+  {
+    "objectID": "analysis/3-pu-learning.html#the-problem-with-negative-labels",
+    "href": "analysis/3-pu-learning.html#the-problem-with-negative-labels",
+    "title": "PU Learning",
+    "section": "",
+    "text": "Traditional binary classification requires both positive and negative labeled examples. Our dataset contains 28 happiness points marked by survey respondents and ~40,000 road sampling points with unknown happiness status. The tempting approach would be to treat all unlabeled points as “not happy”—but this fundamentally misrepresents the data.\nThe critical insight: unlabeled does not mean negative. Many road sampling points might also be happy locations—they simply weren’t identified in the survey. A beautiful park bench, a cozy café corner, a tree-lined street with afternoon sun—any of these might bring joy to someone, but if no survey respondent happened to mention them, they remain unlabeled. Training a standard classifier with all unlabeled points as negatives would systematically bias the model against places that are happy but unrecognized.\nPositive-Unlabeled (PU) Learning addresses this by identifying “reliable negatives” from the unlabeled set—points that are genuinely unlikely to be happy places—and training classifiers using only these carefully selected negatives alongside the labeled positives.\n#| eval: false\n\nfrom scipy.spatial.distance import cdist\nimport numpy as np\n\nclass PULearningModel:\n    \"\"\"\n    Positive-Unlabeled Learning classifier for happiness prediction.\n    \n    Uses distance-based reliable negative identification followed by\n    standard classification with class balancing.\n    \"\"\"\n    \n    def __init__(self, reliable_neg_ratio=0.30):\n        \"\"\"\n        Parameters:\n        -----------\n        reliable_neg_ratio : float\n            Proportion of unlabeled samples to use as reliable negatives.\n            Higher values increase training set size but risk label noise.\n        \"\"\"\n        self.reliable_neg_ratio = reliable_neg_ratio\n        self.scaler = StandardScaler()",
+    "crumbs": [
+      "Methodology",
+      "PU Learning Model"
+    ]
+  },
+  {
+    "objectID": "analysis/3-pu-learning.html#building-the-feature-vector",
+    "href": "analysis/3-pu-learning.html#building-the-feature-vector",
+    "title": "PU Learning",
+    "section": "Building the Feature Vector",
+    "text": "Building the Feature Vector\nWe construct a feature vector combining visual and socioeconomic characteristics—what a person sees when standing at a location, and the broader neighborhood context that shapes how places “feel”:\n#| eval: false\n\n# Visual features from semantic segmentation\nvisual_features = [\n    'sky_ratio',           # Sky visibility\n    'green_view_index',    # Vegetation coverage\n    'building_ratio',      # Built environment density\n    'road_ratio',          # Road/sidewalk coverage\n    'vehicle_ratio',       # Vehicle presence\n    'person_ratio'         # Pedestrian presence\n]\n\n# Socioeconomic features from Census\ncensus_features = [\n    'median_income',       # Economic status\n    'poverty_rate',        # Deprivation indicator\n    'pct_college',         # Education level\n    'pct_white',           # Racial composition\n    'median_age',          # Age demographics\n    'pct_owner_occupied',  # Housing tenure\n    'unemployment_rate'    # Employment status\n]\n\nall_features = visual_features + census_features\nVisual features directly measure what a person sees. Prior research has shown that these characteristics correlate with perceived safety and pleasantness. Socioeconomic features capture neighborhood context that may not be directly visible—a clean street in a high-income area may feel different from an identical street in a high-poverty area due to ambient factors like noise, social activity, and maintenance levels. We intentionally excluded highly correlated features (using pct_college rather than separate counts for each degree level) to avoid multicollinearity issues in logistic regression.",
+    "crumbs": [
+      "Methodology",
+      "PU Learning Model"
+    ]
+  },
+  {
+    "objectID": "analysis/3-pu-learning.html#finding-reliable-negatives",
+    "href": "analysis/3-pu-learning.html#finding-reliable-negatives",
+    "title": "PU Learning",
+    "section": "Finding Reliable Negatives",
+    "text": "Finding Reliable Negatives\nOur approach identifies reliable negatives based on feature-space distance from positive examples. The intuition: points far from the positive centroid in feature space are unlikely to be latent positives.\n#| eval: false\n\ndef identify_reliable_negatives(self, X_positive, X_unlabeled):\n    \"\"\"\n    Identify reliable negative samples using distance to positive centroid.\n    \n    Intuition: Points far from the positive centroid in feature space\n    are unlikely to be latent positives.\n    \"\"\"\n    # Calculate centroid of positive samples\n    positive_centroid = X_positive.mean(axis=0)\n    \n    # Calculate Euclidean distance from each unlabeled point to centroid\n    distances = cdist(X_unlabeled, [positive_centroid], metric='euclidean').flatten()\n    \n    # Select most distant points as reliable negatives\n    n_reliable = int(len(X_unlabeled) * self.reliable_neg_ratio)\n    reliable_neg_indices = np.argsort(distances)[-n_reliable:]\n    \n    # Also identify \"suspect positives\" (very close to positive centroid)\n    n_suspect = int(len(X_unlabeled) * 0.05)\n    suspect_pos_indices = np.argsort(distances)[:n_suspect]\n    \n    return reliable_neg_indices, suspect_pos_indices, distances\nWe chose 30% as the reliable negative ratio after considering several factors. Too few negatives limits training data; too many risks including latent positives. Urban planning literature suggests roughly 60-70% of city locations are “neutral”—neither particularly happy nor unhappy. Cross-validation performance plateaued around 25-35%.\nThe 5% suspect positive identification serves a dual purpose: these points are excluded from the reliable negative set as a safety margin, and they can be examined post-hoc to discover potentially overlooked happy locations.\n#| eval: false\n\nimport matplotlib.pyplot as plt\nfrom sklearn.decomposition import PCA\n\ndef visualize_sample_distribution(X_pos, X_unl, reliable_idx, suspect_idx):\n    \"\"\"\n    2D PCA visualization of sample distribution.\n    \"\"\"\n    # Combine and project to 2D\n    X_all = np.vstack([X_pos, X_unl])\n    pca = PCA(n_components=2)\n    X_2d = pca.fit_transform(X_all)\n    \n    n_pos = len(X_pos)\n    \n    fig, ax = plt.subplots(figsize=(10, 8))\n    \n    # Plot each category\n    ax.scatter(X_2d[n_pos:][reliable_idx, 0], X_2d[n_pos:][reliable_idx, 1],\n               c='blue', alpha=0.3, s=10, label='Reliable Negative')\n    ax.scatter(X_2d[n_pos:][suspect_idx, 0], X_2d[n_pos:][suspect_idx, 1],\n               c='orange', alpha=0.5, s=20, label='Suspect Positive')\n    ax.scatter(X_2d[:n_pos, 0], X_2d[:n_pos, 1],\n               c='red', s=100, marker='*', label='Labeled Positive')\n    \n    ax.legend()\n    ax.set_xlabel(f'PC1 ({pca.explained_variance_ratio_[0]:.1%} variance)')\n    ax.set_ylabel(f'PC2 ({pca.explained_variance_ratio_[1]:.1%} variance)')\n    ax.set_title('PCA Projection of Sample Distribution')\n    \n    return fig",
+    "crumbs": [
+      "Methodology",
+      "PU Learning Model"
+    ]
+  },
+  {
+    "objectID": "analysis/3-pu-learning.html#training-the-models",
+    "href": "analysis/3-pu-learning.html#training-the-models",
+    "title": "PU Learning",
+    "section": "Training the Models",
+    "text": "Training the Models\nWe train two complementary classifiers. Logistic Regression provides interpretable coefficients showing the direction and magnitude of each feature’s effect. Random Forest can capture non-linear relationships and interactions that logistic regression misses.\n#| eval: false\n\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.model_selection import StratifiedKFold, cross_val_score\n\ndef train_models(self, X_positive, X_unlabeled):\n    \"\"\"\n    Train PU Learning classifiers.\n    \"\"\"\n    # Scale features\n    X_all = np.vstack([X_positive, X_unlabeled])\n    self.scaler.fit(X_all)\n    \n    X_pos_scaled = self.scaler.transform(X_positive)\n    X_unl_scaled = self.scaler.transform(X_unlabeled)\n    \n    # Identify reliable negatives\n    reliable_idx, suspect_idx, distances = self.identify_reliable_negatives(\n        X_pos_scaled, X_unl_scaled\n    )\n    \n    X_reliable_neg = X_unl_scaled[reliable_idx]\n    \n    # Prepare training data\n    X_train = np.vstack([X_pos_scaled, X_reliable_neg])\n    y_train = np.array([1] * len(X_pos_scaled) + [0] * len(X_reliable_neg))\n    \n    # Train models with class balancing\n    self.lr_model = LogisticRegression(\n        class_weight='balanced', \n        max_iter=1000,\n        random_state=42\n    )\n    self.lr_model.fit(X_train, y_train)\n    \n    self.rf_model = RandomForestClassifier(\n        n_estimators=200,\n        max_depth=10,\n        class_weight='balanced',\n        random_state=42\n    )\n    self.rf_model.fit(X_train, y_train)\n    \n    return X_train, y_train\nClass weighting (class_weight='balanced') is essential. Even after PU Learning, we have a 28:~9,000 class ratio. Without weighting, the model would achieve high accuracy by simply predicting all points as negative.\nCross-validation strategy: We use 5-fold stratified cross-validation, ensuring each fold contains proportional representation of positive samples (about 5-6 per fold). This is the minimum viable setup given our small positive sample size.",
+    "crumbs": [
+      "Methodology",
+      "PU Learning Model"
+    ]
+  },
+  {
+    "objectID": "analysis/3-pu-learning.html#evaluating-performance",
+    "href": "analysis/3-pu-learning.html#evaluating-performance",
+    "title": "PU Learning",
+    "section": "Evaluating Performance",
+    "text": "Evaluating Performance\n#| eval: false\n\nfrom sklearn.metrics import roc_curve, auc\n\ndef plot_roc_curves(self, X_train, y_train):\n    \"\"\"\n    Generate ROC curves with 5-fold cross-validation.\n    \"\"\"\n    cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\n    \n    fig, ax = plt.subplots(figsize=(8, 8))\n    mean_fpr = np.linspace(0, 1, 100)\n    \n    lr_tprs = []\n    rf_tprs = []\n    \n    for fold, (train_idx, val_idx) in enumerate(cv.split(X_train, y_train)):\n        X_tr, y_tr = X_train[train_idx], y_train[train_idx]\n        X_val, y_val = X_train[val_idx], y_train[val_idx]\n        \n        # Logistic Regression\n        lr = LogisticRegression(class_weight='balanced', max_iter=1000)\n        lr.fit(X_tr, y_tr)\n        lr_prob = lr.predict_proba(X_val)[:, 1]\n        lr_fpr, lr_tpr, _ = roc_curve(y_val, lr_prob)\n        lr_tprs.append(np.interp(mean_fpr, lr_fpr, lr_tpr))\n        \n        # Random Forest\n        rf = RandomForestClassifier(n_estimators=200, max_depth=10, \n                                    class_weight='balanced', random_state=42)\n        rf.fit(X_tr, y_tr)\n        rf_prob = rf.predict_proba(X_val)[:, 1]\n        rf_fpr, rf_tpr, _ = roc_curve(y_val, rf_prob)\n        rf_tprs.append(np.interp(mean_fpr, rf_fpr, rf_tpr))\n    \n    # Plot mean curves\n    ax.plot(mean_fpr, np.mean(lr_tprs, axis=0), \n            label=f'Logistic Regression (AUC = {np.mean([auc(mean_fpr, t) for t in lr_tprs]):.3f})')\n    ax.plot(mean_fpr, np.mean(rf_tprs, axis=0),\n            label=f'Random Forest (AUC = {np.mean([auc(mean_fpr, t) for t in rf_tprs]):.3f})')\n    ax.plot([0, 1], [0, 1], '--', color='gray', label='Random')\n    \n    ax.set_xlabel('False Positive Rate')\n    ax.set_ylabel('True Positive Rate')\n    ax.legend()\n    \n    return fig\n\n\n\nROC Curves from 5-Fold Cross-Validation\n\n\n\n\n\nModel\nAUC\nStd Dev\n\n\n\n\nLogistic Regression\n0.968\n±0.013\n\n\nRandom Forest\n0.939\n±0.045\n\n\n\nBoth models achieve strong discriminative performance, with Logistic Regression slightly outperforming Random Forest. An AUC of 0.968 means that if we randomly select one positive and one negative sample, the model correctly ranks them 96.8% of the time. Happiness points are indeed distinguishable from reliable negatives in feature space.\nWhy does the simpler model win? With only 28 positive samples, Random Forest’s flexibility becomes a liability—it can overfit to idiosyncratic patterns in the small positive set. Logistic regression’s stronger inductive bias (linear decision boundary) provides regularization that helps generalization. The variance comparison confirms this: logistic regression shows lower variance across folds (±0.013 vs ±0.045), indicating more stable performance.",
+    "crumbs": [
+      "Methodology",
+      "PU Learning Model"
+    ]
+  },
+  {
+    "objectID": "analysis/3-pu-learning.html#what-the-coefficients-tell-us",
+    "href": "analysis/3-pu-learning.html#what-the-coefficients-tell-us",
+    "title": "PU Learning",
+    "section": "What the Coefficients Tell Us",
+    "text": "What the Coefficients Tell Us\n#| eval: false\n\ndef get_feature_importance(self, feature_names):\n    \"\"\"\n    Extract and format feature importance from both models.\n    \"\"\"\n    importance = pd.DataFrame({\n        'feature': feature_names,\n        'lr_coefficient': self.lr_model.coef_[0],\n        'rf_importance': self.rf_model.feature_importances_\n    })\n    \n    importance['direction'] = importance['lr_coefficient'].apply(\n        lambda x: 'Positive (+)' if x &gt; 0 else 'Negative (-)'\n    )\n    importance['lr_abs'] = importance['lr_coefficient'].abs()\n    \n    return importance.sort_values('lr_abs', ascending=False)\n\n\n\nFeature\nLR Coefficient\nDirection\nRF Importance\n\n\n\n\npct_owner_occupied\n-2.10\nNegative\n0.089\n\n\npoverty_rate\n-1.28\nNegative\n0.076\n\n\nroad_ratio\n-1.23\nNegative\n0.082\n\n\nbuilding_ratio\n+1.00\nPositive\n0.095\n\n\npct_college\n+0.70\nPositive\n0.088\n\n\nsky_ratio\n+0.58\nPositive\n0.091\n\n\nvehicle_ratio\n-0.29\nNegative\n0.078\n\n\nperson_ratio\n-0.24\nNegative\n0.065\n\n\nmedian_income\n+0.18\nPositive\n0.112\n\n\ngreen_view_index\n+0.06\nPositive\n0.087\n\n\nmedian_age\n-0.04\nNegative\n0.071\n\n\nunemployment_rate\n-0.02\nNegative\n0.066\n\n\n\nThe strongest negative predictor is owner-occupancy rate (-2.10)—a counterintuitive finding. Areas with high homeownership are less likely to contain happiness points. High-ownership areas tend to be quiet residential suburbs with few destinations; happiness points may cluster in mixed-use, walkable areas that have more renters. This reflects a distinction between “good for living” and “feels happy to visit.”\nRoad ratio as negative predictor (-1.23) aligns with urban design principles: car-centric environments are less pleasant for pedestrians. Building ratio as positive predictor (+1.00) suggests dense areas have more amenities, activities, and social opportunities. Sky visibility (+0.58) supports the psychological value of openness in urban environments, even when controlling for building density.",
+    "crumbs": [
+      "Methodology",
+      "PU Learning Model"
+    ]
+  },
+  {
+    "objectID": "analysis/3-pu-learning.html#scoring-the-city",
+    "href": "analysis/3-pu-learning.html#scoring-the-city",
+    "title": "PU Learning",
+    "section": "Scoring the City",
+    "text": "Scoring the City\n#| eval: false\n\ndef predict_happiness(self, df, feature_cols):\n    \"\"\"\n    Generate happiness predictions for all points.\n    \"\"\"\n    X = df[feature_cols].values\n    X_scaled = self.scaler.transform(X)\n    \n    # Get probability scores\n    raw_probs = self.lr_model.predict_proba(X_scaled)[:, 1]\n    \n    # Normalize to 0-1 scale\n    normalized = (raw_probs - raw_probs.min()) / (raw_probs.max() - raw_probs.min())\n    \n    # Ensure labeled positives get score 1.0\n    if 'is_happy' in df.columns:\n        normalized[df['is_happy'] == 1] = 1.0\n    \n    df['happiness_score'] = normalized\n    \n    return df\nAfter scoring all ~40,000 points:\n\n\n\nScore Range\nCount\nPercentage\n\n\n\n\n0.0 - 0.2\n~9,000\n30%\n\n\n0.2 - 0.4\n~8,000\n27%\n\n\n0.4 - 0.6\n~7,000\n23%\n\n\n0.6 - 0.8\n~4,000\n13%\n\n\n0.8 - 1.0\n~2,000\n7%\n\n\n\nThe distribution is right-skewed, with most points receiving low happiness scores. This is expected—if happiness points were common, they wouldn’t be special. The ~2,000 points (7%) scoring above 0.8 represent locations sharing characteristics with labeled happiness points. These could be true latent positives—happy places not identified in the survey—or false positives that statistically resemble happy places but don’t evoke actual happiness. Manual validation of a random sample could help distinguish these cases.",
+    "crumbs": [
+      "Methodology",
+      "PU Learning Model"
+    ]
+  },
+  {
+    "objectID": "analysis/3-pu-learning.html#what-weve-built",
+    "href": "analysis/3-pu-learning.html#what-weve-built",
+    "title": "PU Learning",
+    "section": "What We’ve Built",
+    "text": "What We’ve Built\nThe PU Learning approach successfully identifies features that distinguish happiness points. Distance-based reliable negative identification combined with class-balanced logistic regression achieves AUC = 0.968. The key positive factors are building density, college education rate, and sky visibility. The key negative factors are owner-occupancy rate, poverty rate, and road coverage. We’ve generated happiness scores for all ~40,000 sampling points, enabling city-wide mapping of predicted happiness.\nThe next section presents the full results and discusses what these patterns mean for understanding—and perhaps improving—urban environments.",
+    "crumbs": [
+      "Methodology",
+      "PU Learning Model"
+    ]
+  },
+  {
+    "objectID": "analysis/1-data-collection.html",
+    "href": "analysis/1-data-collection.html",
+    "title": "Data Collection",
+    "section": "",
+    "text": "Any study of urban happiness must begin with data that captures both the visual character of places and the social context of neighborhoods. Our pipeline integrates three distinct sources: road network data for systematic sampling, Google Street View imagery for visual features, and Census data for socioeconomic context.",
+    "crumbs": [
+      "Methodology",
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "analysis/1-data-collection.html#the-foundation-of-spatial-analysis",
+    "href": "analysis/1-data-collection.html#the-foundation-of-spatial-analysis",
+    "title": "Data Collection",
+    "section": "",
+    "text": "Any study of urban happiness must begin with data that captures both the visual character of places and the social context of neighborhoods. Our pipeline integrates three distinct sources: road network data for systematic sampling, Google Street View imagery for visual features, and Census data for socioeconomic context.",
+    "crumbs": [
+      "Methodology",
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "analysis/1-data-collection.html#philadelphia-as-study-area",
+    "href": "analysis/1-data-collection.html#philadelphia-as-study-area",
+    "title": "Data Collection",
+    "section": "Philadelphia as Study Area",
+    "text": "Philadelphia as Study Area\nPhiladelphia offers an ideal laboratory for studying urban happiness. The city contains everything from the dense, walkable streets of Center City to quiet residential suburbs in the Northeast and Northwest, industrial zones along the Delaware River, and historic neighborhoods like Society Hill and Germantown. This diversity allows us to examine how different urban forms relate to perceived happiness.\n\nWhere Are the Happy Places?\nThe 28 happiness points collected from Drexel University students reveal a striking spatial pattern:\n\n\n\n\nInteractive map: Click on markers to view details. Drag to rotate, scroll to zoom.\nThe clustering is immediately apparent. Most happiness points concentrate in the urban core—near commercial districts, cultural institutions, and the university campus. Several align along the Delaware and Schuylkill Rivers, where waterfront parks and trails provide recreational amenities. Notably absent are the outer residential neighborhoods that comprise most of Philadelphia’s land area. This pattern already hints at what our analysis will confirm: happiness is associated with urban vitality rather than quiet residential settings.",
+    "crumbs": [
+      "Methodology",
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "analysis/1-data-collection.html#generating-sampling-points",
+    "href": "analysis/1-data-collection.html#generating-sampling-points",
+    "title": "Data Collection",
+    "section": "Generating Sampling Points",
+    "text": "Generating Sampling Points\nFollowing the approach established by Li & Ratti (2019), we generate sampling points at regular intervals along road centerlines. A 200-meter interval balances comprehensive coverage against computational feasibility, producing approximately 40,000 points distributed across Philadelphia’s street network.\nThe projection system matters more than it might seem. We use NAD 1983 Pennsylvania South (EPSG:2272) rather than WGS84 because at Philadelphia’s latitude, unprojected coordinates would introduce roughly 15% error in distance calculations due to meridian convergence.\n#| eval: false\n\nimport geopandas as gpd\nimport pandas as pd\nfrom shapely.geometry import Point\nfrom pathlib import Path\n\ndef generate_sampling_points(centerline_path, boundary_path, interval_m=200):\n    \"\"\"\n    Generate sampling points along road centerlines at regular intervals.\n    \n    Parameters:\n    -----------\n    centerline_path : str\n        Path to road centerline shapefile\n    boundary_path : str\n        Path to city boundary shapefile\n    interval_m : float\n        Sampling interval in meters (default: 200)\n    \n    Returns:\n    --------\n    GeoDataFrame with sampling points\n    \"\"\"\n    # Define projection - NAD 1983 Pennsylvania South (ft)\n    target_crs = \"EPSG:2272\"\n    \n    # Read and project data\n    centerline = gpd.read_file(centerline_path).to_crs(target_crs)\n    boundary = gpd.read_file(boundary_path).to_crs(target_crs)\n    \n    # Clip roads to city boundary\n    centerline_clipped = gpd.clip(centerline, boundary)\n    \n    # Convert interval from meters to feet\n    interval_ft = interval_m * 3.28084\n    \n    # Generate points along each road segment\n    sample_points = []\n    sample_attributes = []\n    \n    for idx, row in centerline_clipped.iterrows():\n        line = row.geometry\n        \n        if line.geom_type == 'LineString':\n            _process_linestring(line, idx, interval_ft, sample_points, sample_attributes)\n        elif line.geom_type == 'MultiLineString':\n            for sub_idx, single_line in enumerate(line.geoms):\n                _process_linestring(single_line, f\"{idx}_{sub_idx}\", interval_ft, \n                                   sample_points, sample_attributes)\n    \n    # Create GeoDataFrame\n    gdf = gpd.GeoDataFrame(sample_attributes, geometry=sample_points, crs=target_crs)\n    gdf['point_id'] = range(1, len(gdf) + 1)\n    \n    # Add WGS84 coordinates for API calls\n    gdf_wgs84 = gdf.to_crs(\"EPSG:4326\")\n    gdf['longitude'] = gdf_wgs84.geometry.x\n    gdf['latitude'] = gdf_wgs84.geometry.y\n    \n    return gdf\n\n\ndef _process_linestring(line, street_id, interval_ft, points_list, attrs_list):\n    \"\"\"Helper function to process a single LineString geometry.\"\"\"\n    line_length = line.length\n    num_points = int(line_length / interval_ft) + 1\n    \n    for i in range(num_points):\n        distance = i * interval_ft\n        if distance &lt;= line_length:\n            point = line.interpolate(distance)\n            points_list.append(point)\n            attrs_list.append({\n                'point_type': 'road_sample',\n                'street_id': street_id,\n                'distance_ft': round(distance, 2)\n            })\nPhiladelphia’s road data contains both LineString and MultiLineString geometries—the latter occurring where a single road record spans multiple disconnected segments, such as roads split by parks or rivers. We process each component separately to maintain accurate sampling. By clipping to the city boundary first, we ensure all sampling points fall within Philadelphia’s limits.\n\n\n\nMetric\nValue\n\n\n\n\nTotal road segments\n~47,000\n\n\nSampling interval\n200 meters\n\n\nGenerated points\n~40,000\n\n\nCoverage area\n142 sq mi",
+    "crumbs": [
+      "Methodology",
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "analysis/1-data-collection.html#google-street-view-download",
+    "href": "analysis/1-data-collection.html#google-street-view-download",
+    "title": "Data Collection",
+    "section": "Google Street View Download",
+    "text": "Google Street View Download\nGoogle Street View provides the visual foundation for our analysis. Rather than using the standard Static API (which limits images to 640×640 pixels), we employ a tile-based download method that stitches together high-resolution panoramic images at 3328×1664 pixels—over 8× more pixels for semantic segmentation.\n#| eval: false\n\nimport requests\nfrom PIL import Image\nfrom io import BytesIO\nimport time\n\nclass GSVDownloader:\n    \"\"\"\n    Google Street View panorama downloader using tile stitching method.\n    \n    This approach downloads individual tiles and stitches them together,\n    providing higher resolution than the standard Static API limit.\n    \"\"\"\n    \n    def __init__(self, api_key):\n        self.api_key = api_key\n        self.metadata_url = \"https://maps.googleapis.com/maps/api/streetview/metadata\"\n        \n        # Tile configuration for each zoom level\n        self.grid_sizes = {\n            0: (1, 1),    # 512 x 512\n            1: (2, 1),    # 1024 x 512\n            2: (4, 2),    # 2048 x 1024\n            3: (7, 4),    # 3584 x 2048 -&gt; cropped to 3328 x 1664\n            4: (13, 7),   # 6656 x 3584\n            5: (26, 13)   # 13312 x 6656\n        }\n    \n    def get_metadata(self, lat, lon):\n        \"\"\"\n        Retrieve GSV metadata for a location.\n        \n        Returns pano_id, capture date, and actual location if available.\n        \"\"\"\n        params = {\n            'location': f\"{lat},{lon}\",\n            'key': self.api_key\n        }\n        \n        response = requests.get(self.metadata_url, params=params, timeout=10)\n        data = response.json()\n        \n        if data.get('status') == 'OK':\n            return {\n                'pano_id': data['pano_id'],\n                'lat': data['location']['lat'],\n                'lon': data['location']['lng'],\n                'date': data.get('date'),\n                'status': 'OK'\n            }\n        return {'status': data.get('status', 'UNKNOWN')}\n    \n    def download_panorama(self, pano_id, output_path=None, zoom=3, tile_size=512):\n        \"\"\"\n        Download and stitch panorama tiles.\n        \"\"\"\n        cols, rows = self.grid_sizes[zoom]\n        \n        # Create blank canvas\n        panorama = Image.new('RGB', (cols * tile_size, rows * tile_size))\n        \n        # Download and place each tile\n        for y in range(rows):\n            for x in range(cols):\n                tile_url = (f\"https://cbk0.google.com/cbk?\"\n                           f\"output=tile&panoid={pano_id}&zoom={zoom}&x={x}&y={y}\")\n                \n                try:\n                    response = requests.get(tile_url, timeout=10)\n                    if response.status_code == 200:\n                        tile = Image.open(BytesIO(response.content))\n                        panorama.paste(tile, (x * tile_size, y * tile_size))\n                except Exception as e:\n                    print(f\"Failed to download tile ({x},{y}): {e}\")\n                \n                time.sleep(0.02)  # Rate limiting\n        \n        if output_path:\n            panorama.save(output_path, 'JPEG', quality=95)\n        \n        return panorama\nThe tile-based approach offers practical advantages: direct tile access produces clean images without the Google logo watermark, and tile requests don’t count against the paid Static API quota.\nCoverage analysis revealed that approximately 98% of sampling points have available Street View imagery. The ~2% without coverage typically fall in recently developed areas, private roads, or parks without street access.\n\n\n\nMetric\nValue\n\n\n\n\nPoints with GSV metadata\n~40,000\n\n\nImage dimensions\n3328 × 1664 px\n\n\nTotal storage\n~60 GB\n\n\n\n\nA Visual Tour of Philadelphia\nThe downloaded panoramas capture the remarkable diversity of Philadelphia’s urban fabric:\n\n\n\n\n\n\nUrban park environment\n\n\n\n\n\n\n\nCommunity garden street\n\n\n\n\n\n\n\n\n\n\n\nCommercial district\n\n\n\n\n\n\n\nHighway infrastructure\n\n\n\n\n\nFrom lush parks and intimate residential streets to commercial corridors and highway infrastructure—this variation is essential for building a model that can distinguish environmental characteristics associated with happiness. The 28 happiness points from Drexel University’s study are included in our sampling points dataset and processed alongside all other road samples.",
+    "crumbs": [
+      "Methodology",
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "analysis/1-data-collection.html#census-data-integration",
+    "href": "analysis/1-data-collection.html#census-data-integration",
+    "title": "Data Collection",
+    "section": "Census Data Integration",
+    "text": "Census Data Integration\nThe visual character of a street tells only part of the story. A clean street in a high-income neighborhood may feel different from an identical street in a high-poverty area due to ambient factors—noise levels, social activity patterns, maintenance standards—that aren’t directly visible in a photograph.\nWe selected Census variables that prior research has linked to neighborhood quality and perceived well-being:\n#| eval: false\n\nclass CensusDownloader:\n    \"\"\"\n    Download and process Census ACS 5-year estimates.\n    \n    Focuses on variables related to:\n    - Demographics (age, race)\n    - Economic status (income, poverty)\n    - Education\n    - Housing characteristics\n    \"\"\"\n    \n    def __init__(self, api_key):\n        self.api_key = api_key\n        self.base_url = \"https://api.census.gov/data\"\n        \n        # Philadelphia: State 42 (PA), County 101\n        self.state = \"42\"\n        self.county = \"101\"\n        \n        # ACS variables of interest\n        self.variables = {\n            # Population\n            'B01003_001E': 'total_pop',\n            'B01002_001E': 'median_age',\n            \n            # Race\n            'B02001_002E': 'pop_white',\n            'B02001_003E': 'pop_black',\n            \n            # Income & Poverty\n            'B19013_001E': 'median_income',\n            'B17001_002E': 'pop_poverty',\n            \n            # Education (25+)\n            'B15003_022E': 'pop_bachelor',\n            'B15003_023E': 'pop_master',\n            'B15003_025E': 'pop_doctorate',\n            \n            # Housing\n            'B25003_001E': 'total_housing',\n            'B25003_002E': 'owner_occupied',\n            \n            # Employment\n            'B23025_003E': 'labor_force',\n            'B23025_005E': 'unemployed',\n        }\n    \n    def download(self, year=2022):\n        \"\"\"Download ACS 5-year estimates for Philadelphia Census Tracts.\"\"\"\n        var_string = ','.join(self.variables.keys())\n        \n        url = f\"{self.base_url}/{year}/acs/acs5\"\n        params = {\n            'get': f'NAME,{var_string}',\n            'for': 'tract:*',\n            'in': f'state:{self.state} county:{self.county}',\n            'key': self.api_key\n        }\n        \n        response = requests.get(url, params=params, timeout=60)\n        data = response.json()\n        \n        # Convert to DataFrame\n        df = pd.DataFrame(data[1:], columns=data[0])\n        \n        # Rename columns\n        for code, name in self.variables.items():\n            if code in df.columns:\n                df = df.rename(columns={code: name})\n        \n        # Create GEOID for spatial join\n        df['GEOID'] = df['state'] + df['county'] + df['tract']\n        \n        return df\n    \n    def calculate_rates(self, df):\n        \"\"\"Calculate derived variables (percentages and rates).\"\"\"\n        # Safely divide, handling zeros\n        def safe_div(num, denom):\n            return num / denom.where(denom &gt; 0)\n        \n        df['pct_white'] = safe_div(df['pop_white'], df['total_pop'])\n        df['poverty_rate'] = safe_div(df['pop_poverty'], df['total_pop'])\n        \n        # College education rate\n        df['pop_college'] = (df['pop_bachelor'].fillna(0) + \n                            df['pop_master'].fillna(0) + \n                            df['pop_doctorate'].fillna(0))\n        df['pct_college'] = safe_div(df['pop_college'], df['total_pop'])\n        \n        df['pct_owner_occupied'] = safe_div(df['owner_occupied'], df['total_housing'])\n        df['unemployment_rate'] = safe_div(df['unemployed'], df['labor_force'])\n        \n        return df\nA data quality note: the Census API returns -666666666 for missing or suppressed values, typically in tracts with very small populations where releasing data would compromise anonymity. We replace these with NaN before analysis.\nThere’s an inherent limitation in using Census data at the tract level. Philadelphia has 384 tracts for a city of 1.58 million people, meaning each tract averages about 4,100 residents. Any sampling point within a tract receives the same socioeconomic values. A street corner in a nominally wealthy tract may actually be surrounded by lower-income residents, but our data cannot capture this intra-tract variation—an ecological fallacy risk worth keeping in mind.\n\n\n\nVariable\nMin\nMean\nMax\n\n\n\n\nMedian Income\n$13,125\n$52,847\n$250,000+\n\n\nPoverty Rate\n0.0%\n22.4%\n68.2%\n\n\nCollege Rate\n2.1%\n31.2%\n89.4%\n\n\nOwner-Occupied\n0.0%\n52.3%\n97.8%",
+    "crumbs": [
+      "Methodology",
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "analysis/1-data-collection.html#the-final-dataset",
+    "href": "analysis/1-data-collection.html#the-final-dataset",
+    "title": "Data Collection",
+    "section": "The Final Dataset",
+    "text": "The Final Dataset\nAfter completing all data collection steps, we produce a unified dataset containing approximately 40,000 observations. Each point carries 6 visual features (from semantic segmentation, covered next), 8 socioeconomic features (from Census), and a PU Learning label indicating whether the point is a labeled happiness location or unlabeled.\nThis dataset forms the foundation for our analysis of what makes places feel happy.",
+    "crumbs": [
+      "Methodology",
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "analysis/2-semantic-segmentation.html",
+    "href": "analysis/2-semantic-segmentation.html",
+    "title": "Semantic Segmentation",
+    "section": "",
+    "text": "A street view image contains rich information about the urban environment, but raw pixel values tell us nothing directly useful. What we need is a way to answer questions like: How much of this scene is sky? How much is vegetation? Is this a car-dominated environment or a pedestrian-friendly one?\nSemantic segmentation transforms images into meaningful categories, labeling every pixel with what it represents—sky, tree, building, road, car, person. This transformation is the bridge between visual data and quantitative analysis.",
+    "crumbs": [
+      "Methodology",
+      "Semantic Segmentation"
+    ]
+  },
+  {
+    "objectID": "analysis/2-semantic-segmentation.html#from-pixels-to-meaning",
+    "href": "analysis/2-semantic-segmentation.html#from-pixels-to-meaning",
+    "title": "Semantic Segmentation",
+    "section": "",
+    "text": "A street view image contains rich information about the urban environment, but raw pixel values tell us nothing directly useful. What we need is a way to answer questions like: How much of this scene is sky? How much is vegetation? Is this a car-dominated environment or a pedestrian-friendly one?\nSemantic segmentation transforms images into meaningful categories, labeling every pixel with what it represents—sky, tree, building, road, car, person. This transformation is the bridge between visual data and quantitative analysis.",
+    "crumbs": [
+      "Methodology",
+      "Semantic Segmentation"
+    ]
+  },
+  {
+    "objectID": "analysis/2-semantic-segmentation.html#why-segformer",
+    "href": "analysis/2-semantic-segmentation.html#why-segformer",
+    "title": "Semantic Segmentation",
+    "section": "Why SegFormer?",
+    "text": "Why SegFormer?\nWe selected SegFormer-B0 (Xie et al., 2021) after considering several alternatives. The model is pre-trained on ADE20K, a dataset containing 150 semantic classes with excellent coverage of urban scenes. The B0 variant represents the smallest in the SegFormer family, but for our purposes this is a feature rather than a limitation: processing ~40,000 images demands efficiency, and SegFormer-B0 delivers roughly 2 images per second on a mid-range GPU while using only ~4GB of VRAM.\n#| eval: false\n\nfrom transformers import SegformerForSemanticSegmentation, SegformerImageProcessor\nimport torch\n\n# Load pre-trained model\nmodel_name = \"nvidia/segformer-b0-finetuned-ade-512-512\"\nprocessor = SegformerImageProcessor.from_pretrained(model_name)\nmodel = SegformerForSemanticSegmentation.from_pretrained(model_name)\n\n# Check available device\ndevice = torch.device('cuda' if torch.cuda.is_available() else 'cpu')\nmodel = model.to(device)\nmodel.eval()\nWhile newer models might achieve marginally higher accuracy on benchmarks, SegFormer’s transformer-based architecture proves robust across diverse urban scenes—from tree-lined residential streets to concrete highway interchanges. For tens of thousands of images, practical considerations outweigh small accuracy differences.",
+    "crumbs": [
+      "Methodology",
+      "Semantic Segmentation"
+    ]
+  },
+  {
+    "objectID": "analysis/2-semantic-segmentation.html#defining-urban-categories",
+    "href": "analysis/2-semantic-segmentation.html#defining-urban-categories",
+    "title": "Semantic Segmentation",
+    "section": "Defining Urban Categories",
+    "text": "Defining Urban Categories\nADE20K provides 150 fine-grained classes, far more granularity than we need. For urban happiness analysis, we aggregate these into 6 meaningful categories:\n#| eval: false\n\nclass UrbanFeatureExtractor:\n    \"\"\"\n    Extract urban environmental features from semantic segmentation results.\n    \n    Aggregates ADE20K's 150 classes into 6 urban-relevant categories.\n    \"\"\"\n    \n    def __init__(self):\n        # ADE20K class indices for each urban category\n        self.categories = {\n            'sky': [2],                          # sky\n            'vegetation': [4, 9, 17, 66, 72],    # tree, grass, plant, palm, flower\n            'building': [1, 25, 48, 84],         # building, house, skyscraper, booth\n            'road': [6, 11, 52],                 # road, sidewalk, path\n            'vehicle': [20, 80, 83, 102, 127],   # car, bus, truck, van, bicycle\n            'person': [12]                       # person\n        }\n        \n        # Colors for visualization (RGB)\n        self.colors = {\n            'sky': [135, 206, 235],      # Light blue\n            'vegetation': [34, 139, 34],  # Forest green\n            'building': [128, 128, 128],  # Gray\n            'road': [64, 64, 64],         # Dark gray\n            'vehicle': [255, 0, 0],       # Red\n            'person': [255, 192, 203]     # Pink\n        }\n    \n    def calculate_ratios(self, segmentation_map):\n        \"\"\"\n        Calculate the proportion of each category in the image.\n        \n        Parameters:\n        -----------\n        segmentation_map : numpy array\n            2D array of class predictions (H x W)\n        \n        Returns:\n        --------\n        dict : Category ratios (values sum to less than 1.0 due to uncategorized pixels)\n        \"\"\"\n        total_pixels = segmentation_map.size\n        ratios = {}\n        \n        for category, class_ids in self.categories.items():\n            # Count pixels belonging to this category\n            mask = np.isin(segmentation_map, class_ids)\n            pixel_count = np.sum(mask)\n            ratios[f'{category}_ratio'] = pixel_count / total_pixels\n        \n        # Green View Index is a common metric\n        ratios['green_view_index'] = ratios.pop('vegetation_ratio')\n        \n        return ratios\nThe rationale behind these groupings reflects both practical and theoretical considerations. Sky remains a single class because it represents a unified visual experience—the sense of openness that comes from seeing unobstructed sky. Vegetation combines trees, grass, and plants because prior research on Green View Index treats all greenery similarly for psychological impact (Asgarzadeh et al., 2012). Buildings includes multiple structure types because we care about overall built environment density, not architectural distinctions. Road encompasses sidewalks and paths as collective transportation infrastructure.\nThe remaining pixels—furniture, signage, water, and other elements—typically constitute 5-15% of any given image.",
+    "crumbs": [
+      "Methodology",
+      "Semantic Segmentation"
+    ]
+  },
+  {
+    "objectID": "analysis/2-semantic-segmentation.html#processing-pipeline",
+    "href": "analysis/2-semantic-segmentation.html#processing-pipeline",
+    "title": "Semantic Segmentation",
+    "section": "Processing Pipeline",
+    "text": "Processing Pipeline\n\nSingle Image Segmentation\n#| eval: false\n\nimport cv2\nimport numpy as np\nfrom PIL import Image\n\ndef segment_image(image_path, model, processor, device):\n    \"\"\"\n    Perform semantic segmentation on a single street view image.\n    \n    Returns both the segmentation map and calculated feature ratios.\n    \"\"\"\n    # Load and prepare image\n    image = cv2.imread(str(image_path))\n    image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)\n    pil_image = Image.fromarray(image_rgb)\n    \n    # Process through model\n    inputs = processor(images=pil_image, return_tensors=\"pt\")\n    inputs = {k: v.to(device) for k, v in inputs.items()}\n    \n    with torch.no_grad():\n        outputs = model(**inputs)\n        logits = outputs.logits\n    \n    # Upsample to original resolution\n    h, w = image.shape[:2]\n    upsampled = torch.nn.functional.interpolate(\n        logits,\n        size=(h, w),\n        mode='bilinear',\n        align_corners=False\n    )\n    \n    # Get class predictions\n    segmentation = upsampled.argmax(dim=1).squeeze().cpu().numpy()\n    \n    return segmentation, image\nSegFormer processes images at 512×512 pixels internally, but our panoramas are 3328×1664. Upsampling predictions back to original resolution using bilinear interpolation preserves smooth boundaries between semantic classes while allowing us to calculate accurate pixel proportions.\n\n\nBatch Processing at Scale\nFor the full dataset of ~40,000 images, batch processing reduces total computation time from over 100 hours to approximately 4 hours on a single GPU. The key optimizations: multi-threaded data loading (num_workers=4) allows the CPU to prepare batches while the GPU processes, pin_memory=True speeds up CPU-to-GPU transfer, and we start with batch_size=8, reducing if memory errors occur.\n#| eval: false\n\nfrom torch.utils.data import Dataset, DataLoader\n\nclass GSVDataset(Dataset):\n    \"\"\"Custom dataset for batch processing street view images.\"\"\"\n    \n    def __init__(self, image_list, processor):\n        self.image_list = image_list\n        self.processor = processor\n    \n    def __len__(self):\n        return len(self.image_list)\n    \n    def __getitem__(self, idx):\n        img_info = self.image_list[idx]\n        image = cv2.imread(img_info['path'])\n        image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)\n        \n        inputs = self.processor(images=image_rgb, return_tensors=\"pt\")\n        \n        return {\n            'pixel_values': inputs['pixel_values'].squeeze(),\n            'pano_id': img_info['pano_id'],\n            'point_id': img_info['point_id'],\n            'height': image.shape[0],\n            'width': image.shape[1]\n        }\nQuality control: we track failed images (corrupted downloads, unusual dimensions) and log them for manual review. In our run, fewer than 0.5% of images failed processing.",
+    "crumbs": [
+      "Methodology",
+      "Semantic Segmentation"
+    ]
+  },
+  {
+    "objectID": "analysis/2-semantic-segmentation.html#what-the-data-reveals",
+    "href": "analysis/2-semantic-segmentation.html#what-the-data-reveals",
+    "title": "Semantic Segmentation",
+    "section": "What the Data Reveals",
+    "text": "What the Data Reveals\nAfter processing all images, we can compare the visual characteristics of happiness points against baseline road samples:\n#| eval: false\n\nimport pandas as pd\nfrom scipy import stats\n\ndef compare_distributions(df):\n    \"\"\"\n    Statistical comparison of visual features between groups.\n    \"\"\"\n    happy = df[df['is_happy'] == 1]\n    other = df[df['is_happy'] == 0]\n    \n    features = ['sky_ratio', 'green_view_index', 'building_ratio', \n                'road_ratio', 'vehicle_ratio', 'person_ratio']\n    \n    results = []\n    for feat in features:\n        h_mean = happy[feat].mean()\n        o_mean = other[feat].mean()\n        \n        # Independent samples t-test\n        t_stat, p_value = stats.ttest_ind(\n            happy[feat].dropna(), \n            other[feat].dropna()\n        )\n        \n        results.append({\n            'feature': feat,\n            'happy_mean': h_mean,\n            'other_mean': o_mean,\n            'difference': h_mean - o_mean,\n            't_statistic': t_stat,\n            'p_value': p_value,\n            'significant': p_value &lt; 0.05\n        })\n    \n    return pd.DataFrame(results)\n\n\n\nFeature\nHappy Mean\nOther Mean\nDifference\np-value\n\n\n\n\nsky_ratio\n0.285\n0.216\n+0.069\n0.001**\n\n\ngreen_view_index\n0.152\n0.149\n+0.003\n0.847\n\n\nbuilding_ratio\n0.213\n0.188\n+0.025\n0.034*\n\n\nroad_ratio\n0.196\n0.223\n-0.027\n0.048*\n\n\nvehicle_ratio\n0.023\n0.031\n-0.008\n0.156\n\n\nperson_ratio\n0.008\n0.011\n-0.003\n0.423\n\n\n\nThe results tell an interesting story. Sky visibility is significantly higher at happiness points—nearly 7 percentage points more than the city average. This aligns with research on the psychological benefits of open views and natural light. Building ratio is also higher, suggesting happiness points cluster in denser urban areas with more amenities rather than sparse residential neighborhoods. Meanwhile, road coverage is lower, potentially indicating more pedestrian-friendly environments.\nPerhaps most surprising: green view index shows no significant difference. Vegetation is fairly uniform across Philadelphia, or perhaps small patches of greenery don’t meaningfully differentiate happy from ordinary locations. This finding warrants further investigation.",
+    "crumbs": [
+      "Methodology",
+      "Semantic Segmentation"
+    ]
+  },
+  {
+    "objectID": "analysis/2-semantic-segmentation.html#visualizing-segmentation-results",
+    "href": "analysis/2-semantic-segmentation.html#visualizing-segmentation-results",
+    "title": "Semantic Segmentation",
+    "section": "Visualizing Segmentation Results",
+    "text": "Visualizing Segmentation Results\nFor quality assurance and interpretability, we generate visualizations showing the original panorama alongside its semantic segmentation:\n#| eval: false\n\ndef create_visualization(original_image, segmentation, feature_extractor, point_id):\n    \"\"\"\n    Create a side-by-side visualization of original image and segmentation.\n    \"\"\"\n    h, w = segmentation.shape\n    \n    # Create colored segmentation mask\n    color_mask = np.zeros((h, w, 3), dtype=np.uint8)\n    \n    for category, class_ids in feature_extractor.categories.items():\n        mask = np.isin(segmentation, class_ids)\n        color = feature_extractor.colors[category]\n        color_mask[mask] = color\n    \n    # Create overlay\n    color_mask_bgr = cv2.cvtColor(color_mask, cv2.COLOR_RGB2BGR)\n    overlay = cv2.addWeighted(original_image, 0.6, color_mask_bgr, 0.4, 0)\n    \n    # Combine: original | segmentation | overlay\n    combined = np.hstack([original_image, color_mask_bgr, overlay])\n    \n    return combined\n\nFour Environments, Four Stories\n\nUrban Park — High Happiness Score\n\n\n\nSegmentation: Urban park with high greenery\n\n\nThis happiness point features abundant vegetation (dark and light green), significant sky visibility (blue), moderate building presence (gray), and pedestrian-friendly paths (light gray). The Green View Index exceeds 23%, and sky ratio surpasses 24%—both well above city averages. Open, green, and human-scaled: this exemplifies the “ideal” happy place.\n\n\nCommunity Garden — High Happiness Score\n\n\n\nSegmentation: Residential street with community garden\n\n\nA residential street with a vibrant community garden. The segmentation captures vegetation from the garden and street trees (green), row houses (gray), moderate sky visibility, and limited road surface. The presence of visible human-scale elements—plants, stoops, small buildings—creates an intimate, inviting atmosphere.\n\n\nCommercial District — Moderate Score\n\n\n\nSegmentation: Urban commercial street\n\n\nA typical University City commercial street. Building ratio is high (~22%), sky visibility moderate, with notable vehicle presence (red). Curved building facades and street trees provide visual interest, but significant road coverage (~42%) and parked vehicles reduce the happiness score compared to pedestrian-oriented spaces.\n\n\nHighway Infrastructure — Low Score\n\n\n\nSegmentation: Highway with high road ratio\n\n\nThis location exemplifies features our model associates with low happiness: dominant road coverage (~42%), multiple vehicles, minimal vegetation (only 0.2% green). Despite high sky visibility (57%), the environment feels hostile to pedestrians. Even with open sky, a space designed for vehicles rather than people scores poorly.\n\n\n\nThe Pattern in Numbers\n\n\n\nLocation\nSky\nGreen\nBuilding\nRoad\nVehicle\n\n\n\n\nUrban Park\n24.3%\n23.8%\n2.0%\n25.1%\n0.0%\n\n\nCommunity Garden\n31.2%\n12.8%\n33.5%\n30.1%\n1.8%\n\n\nCommercial District\n22.5%\n4.1%\n21.9%\n42.6%\n3.2%\n\n\nHighway\n57.5%\n0.2%\n3.0%\n42.0%\n4.5%\n\n\n\nHappiness points have more greenery, less road, and less vehicle presence—regardless of sky ratio.",
+    "crumbs": [
+      "Methodology",
+      "Semantic Segmentation"
+    ]
+  },
+  {
+    "objectID": "analysis/2-semantic-segmentation.html#limitations-worth-noting",
+    "href": "analysis/2-semantic-segmentation.html#limitations-worth-noting",
+    "title": "Semantic Segmentation",
+    "section": "Limitations Worth Noting",
+    "text": "Limitations Worth Noting\nOur feature extraction has limitations that affect interpretation. We measure simple sky pixel proportion rather than the more sophisticated Sky View Factor (SVF) that accounts for hemispherical projection and better represents human perception of “openness.” Images capture a single moment—time-of-day, seasonal, and weather variations go unmeasured. Objects in the foreground may occlude important background features: a parked truck could hide a beautiful park. And SegFormer occasionally misclassifies objects, particularly at boundaries or for unusual urban elements like street art or construction zones.",
+    "crumbs": [
+      "Methodology",
+      "Semantic Segmentation"
+    ]
+  },
+  {
+    "objectID": "analysis/2-semantic-segmentation.html#what-weve-learned",
+    "href": "analysis/2-semantic-segmentation.html#what-weve-learned",
+    "title": "Semantic Segmentation",
+    "section": "What We’ve Learned",
+    "text": "What We’ve Learned\nThis stage transformed ~40,000 street view images into a structured dataset of 6 visual features per location. Happiness points have significantly more sky visibility and higher building density, but less road coverage—suggesting pedestrian-friendly, vibrant urban environments rather than quiet residential streets or car-dominated corridors.\nThese visual features, combined with Census socioeconomic data, form the input for our PU Learning model.",
+    "crumbs": [
+      "Methodology",
+      "Semantic Segmentation"
+    ]
+  },
+  {
+    "objectID": "analysis/4-results.html",
+    "href": "analysis/4-results.html",
+    "title": "Results & Discussion",
+    "section": "",
+    "text": "Our PU Learning approach achieved strong predictive performance, with Logistic Regression reaching an AUC of 0.968—meaning if we randomly select one happiness point and one reliable negative, the model correctly ranks them 96.8% of the time.\n\n\n\nROC Curves showing model performance\n\n\n\n\n\nMetric\nLogistic Regression\nRandom Forest\n\n\n\n\nAUC-ROC\n0.968 ± 0.013\n0.939 ± 0.045\n\n\nTraining samples\n28 positive + ~9,000 negative\n\n\n\nFeatures\n13 (6 visual + 7 socioeconomic)\n\n\n\n\nThe high AUC suggests happiness points are systematically different from random street locations in measurable ways. But as we’ll discuss later, this strong performance comes with important caveats.",
+    "crumbs": [
+      "Results"
+    ]
+  },
+  {
+    "objectID": "analysis/4-results.html#how-well-does-the-model-perform",
+    "href": "analysis/4-results.html#how-well-does-the-model-perform",
+    "title": "Results & Discussion",
+    "section": "",
+    "text": "Our PU Learning approach achieved strong predictive performance, with Logistic Regression reaching an AUC of 0.968—meaning if we randomly select one happiness point and one reliable negative, the model correctly ranks them 96.8% of the time.\n\n\n\nROC Curves showing model performance\n\n\n\n\n\nMetric\nLogistic Regression\nRandom Forest\n\n\n\n\nAUC-ROC\n0.968 ± 0.013\n0.939 ± 0.045\n\n\nTraining samples\n28 positive + ~9,000 negative\n\n\n\nFeatures\n13 (6 visual + 7 socioeconomic)\n\n\n\n\nThe high AUC suggests happiness points are systematically different from random street locations in measurable ways. But as we’ll discuss later, this strong performance comes with important caveats.",
+    "crumbs": [
+      "Results"
+    ]
+  },
+  {
+    "objectID": "analysis/4-results.html#what-predicts-happiness",
+    "href": "analysis/4-results.html#what-predicts-happiness",
+    "title": "Results & Discussion",
+    "section": "What Predicts Happiness?",
+    "text": "What Predicts Happiness?\nThe lollipop chart visualizes the direction and magnitude of each feature’s effect:\n\n\n\nFeature Effects on Happiness (Lollipop Chart)\n\n\nBuilding Ratio emerges as the strongest positive predictor (+1.00), indicating happiness points cluster in denser urban areas rather than sparse residential neighborhoods. Owner Occupied Rate shows the strongest negative effect (-2.10)—our most counterintuitive finding. College Education and Sky Ratio are strong positive predictors, while Poverty Rate and Road Ratio pull strongly negative.\n\n\n\nFeature Importance Rose Chart\n\n\nThe rose chart offers another view: socioeconomic factors (owner-occupancy, poverty, education) have larger magnitudes than most visual features. This hints that neighborhood context matters as much as—perhaps more than—what you can see in a photograph.\n\n\n\n\n\n\n\n\n\n\n\n\nRank\nPositive Factors\nCoefficient\n\nRank\nNegative Factors\nCoefficient\n\n\n\n\n1\nbuilding_ratio\n+1.00\n\n1\npct_owner_occupied\n-2.10\n\n\n2\npct_college\n+0.70\n\n2\npoverty_rate\n-1.28\n\n\n3\nsky_ratio\n+0.58\n\n3\nroad_ratio\n-1.23\n\n\n4\nmedian_income\n+0.18\n\n4\nvehicle_ratio\n-0.29\n\n\n5\ngreen_view_index\n+0.06\n\n5\nperson_ratio\n-0.24",
+    "crumbs": [
+      "Results"
+    ]
+  },
+  {
+    "objectID": "analysis/4-results.html#the-owner-occupancy-paradox",
+    "href": "analysis/4-results.html#the-owner-occupancy-paradox",
+    "title": "Results & Discussion",
+    "section": "The Owner-Occupancy Paradox",
+    "text": "The Owner-Occupancy Paradox\nThe most striking finding is the strong negative relationship between homeownership rate and happiness. Traditional urban planning often equates high homeownership with neighborhood quality—homeowners invest in maintenance, stable populations build community, crime rates tend to be lower. Yet our model finds the opposite relationship.\nWe hypothesize that what makes a neighborhood good for living differs from what makes a place feel happy. High-ownership neighborhoods are typically quiet, safe, single-use residential areas—pleasant to live in, but not places you’d visit for joy. They’re car-dependent, with few spontaneous social encounters. Happiness points, by contrast, cluster in mixed-use urban areas: walkable, with nearby amenities, active street life, diverse activities and people.\nThe data supports this interpretation:\n\n\n\nMetric\nHappiness Points\nCity Average\n\n\n\n\nOwner-occupancy\n34.2%\n52.3%\n\n\nBuilding ratio\n21.3%\n18.8%\n\n\nRoad ratio\n19.6%\n22.3%\n\n\n\nHappiness points sit in areas with 18 percentage points lower owner-occupancy, 2.5 points higher building density, and 2.7 points lower road coverage. This pattern describes walkable, urban neighborhoods rather than suburban residential streets.",
+    "crumbs": [
+      "Results"
+    ]
+  },
+  {
+    "objectID": "analysis/4-results.html#visual-environment-what-you-see-matters",
+    "href": "analysis/4-results.html#visual-environment-what-you-see-matters",
+    "title": "Results & Discussion",
+    "section": "Visual Environment: What You See Matters",
+    "text": "Visual Environment: What You See Matters\nSky visibility emerged as a significant positive predictor (+0.58). Visible sky reduces feelings of confinement; better daylight improves mood; tall buildings blocking the sky create oppressive urban canyons. This aligns with decades of environmental psychology research.\nBuilding density predicts higher happiness (+1.00)—perhaps counterintuitively. But dense areas have more amenities, services, activities, and social interaction opportunities. The key is that both building_ratio and sky_ratio are positive predictors simultaneously, suggesting happiness is found in moderately dense environments: enough urban vitality to be interesting, not so much as to feel oppressive. Mid-rise neighborhoods, not sprawling suburbs or canyon-like downtowns.\nRoad coverage is a strong negative predictor (-1.23). More road means less space for pedestrians, bikes, and greenery. It indicates traffic noise and pollution exposure. Wide roads create barriers to crossing, fragmenting neighborhoods. The “livable streets” movement has long argued that car-centric design diminishes quality of life; our data supports this.",
+    "crumbs": [
+      "Results"
+    ]
+  },
+  {
+    "objectID": "analysis/4-results.html#socioeconomic-context",
+    "href": "analysis/4-results.html#socioeconomic-context",
+    "title": "Results & Discussion",
+    "section": "Socioeconomic Context",
+    "text": "Socioeconomic Context\nEducation and income both positively predict happiness. Higher-income areas tend to have better maintenance, higher-quality amenities, and more investment in public spaces. There’s also likely a selection effect: survey respondents (university students) may gravitate toward areas similar to their own neighborhoods.\nPoverty rate shows a strong negative effect (-1.28), reflecting the accumulated disadvantages of high-poverty neighborhoods: deferred maintenance, visible decay, safety concerns, and fewer commercial establishments. Happiness, it seems, is not equally distributed across the city.",
+    "crumbs": [
+      "Results"
+    ]
+  },
+  {
+    "objectID": "analysis/4-results.html#mapping-happiness-across-philadelphia",
+    "href": "analysis/4-results.html#mapping-happiness-across-philadelphia",
+    "title": "Results & Discussion",
+    "section": "Mapping Happiness Across Philadelphia",
+    "text": "Mapping Happiness Across Philadelphia\nAfter scoring all ~40,000 points, we can visualize predicted happiness across the city:\n\n\n\n\nInteractive map: Drag to pan, scroll to zoom. Adjust layer opacity with the slider.\nThe spatial pattern is clear. Highest scores concentrate in Center City, University City, Fairmount, and Northern Liberties—dense, mixed-use, walkable neighborhoods. Moderate scores appear in inner-ring neighborhoods with mixed uses. Lowest scores mark outer residential areas, industrial zones, and highway corridors.\nThis isn’t surprising given our model’s coefficients, but seeing it mapped across the city makes the pattern visceral. The happy places form a connected archipelago in the urban core, surrounded by a sea of lower-scoring residential and industrial areas.",
+    "crumbs": [
+      "Results"
+    ]
+  },
+  {
+    "objectID": "analysis/4-results.html#limitations-what-this-study-cannot-tell-us",
+    "href": "analysis/4-results.html#limitations-what-this-study-cannot-tell-us",
+    "title": "Results & Discussion",
+    "section": "Limitations: What This Study Cannot Tell Us",
+    "text": "Limitations: What This Study Cannot Tell Us\nStrong model performance doesn’t mean we’ve solved urban happiness. Several limitations deserve honest acknowledgment.\n\nThe Problem of 28 Points\nWith only 28 positive samples, statistical power is limited. Unusual characteristics of individual points may unduly influence results. Cross-validation produces small validation sets of just 5-6 positives per fold. We can identify broad patterns, but detecting subtle effects is beyond our reach. A study with hundreds or thousands of happiness points would be far more robust.\n\n\nThe Gap Between Happiness and Its Proxy\nWe couldn’t capture street view imagery at the exact happiness point locations. Instead, we used the nearest sampling point’s imagery—sometimes tens or hundreds of meters away. Some happiness points are “secret gardens” that students discovered: hidden courtyards, rooftop terraces, tucked-away benches. These intimate spaces don’t appear in street-level panoramas at all. This spatial mismatch may explain why green view index shows such weak predictive power (+0.06). The actual happy places might be far greener than what our proxy images capture.\n\n\nCensus Data Is Too Coarse\nCensus tract-level socioeconomic data averages over roughly 4,100 residents per tract. A street corner in a nominally wealthy tract may actually be surrounded by lower-income residents, but our data cannot capture this intra-tract variation. We’re assigning neighborhood-level characteristics to point-level observations—an ecological fallacy risk that’s difficult to avoid without finer-grained data.\n\n\nHappiness Isn’t Always About Environment\nOur model assumes happiness derives from measurable environmental and socioeconomic features. But some places are happy not because of what they look like, but because of what happened there. A nondescript bench where someone had their first kiss. An ordinary-looking café where friends gather every Sunday. A street corner that reminds someone of childhood. These places of memory can bring profound happiness despite being visually unremarkable. No amount of semantic segmentation can capture why a place matters to someone.\n\n\nTemporal Blindness\nOur analysis uses static data: street view images from a single moment, Census data averaged over five years. We don’t account for seasonal variation—and this matters more than it might seem. Philadelphia’s Green View Index plummets in winter when deciduous trees are bare. A street that feels lush and alive in July can look stark and gray in January. Should we process winter and summer imagery separately? Our current approach treats them identically, potentially washing out seasonal effects. We also miss weekly and daily rhythms: the same plaza might feel vibrant on a Saturday afternoon and desolate on a Tuesday morning.\n\n\nSky Ratio vs. Sky View Factor\nWe measure simple sky pixel proportion, but the more sophisticated Sky View Factor (SVF) accounts for hemispherical projection and better represents human perception of openness. SVF would weight overhead sky more heavily than sky near the horizon, matching how we actually experience urban space. This is a methodological improvement worth pursuing in future work.\n\n\nCorrelation, Not Causation\nThis is a correlational study. We cannot claim that building density causes happiness. The relationship could be confounded (both caused by a third factor), reversed (happy people might seek out dense areas), or more complex than our linear model can capture.",
+    "crumbs": [
+      "Results"
+    ]
+  },
+  {
+    "objectID": "analysis/4-results.html#implications-for-urban-planning",
+    "href": "analysis/4-results.html#implications-for-urban-planning",
+    "title": "Results & Discussion",
+    "section": "Implications for Urban Planning",
+    "text": "Implications for Urban Planning\nDespite these limitations, our findings suggest several considerations for those who shape cities.\nRethinking density: The simultaneous positive effects of building density and sky visibility suggest an optimal density range. Mid-rise development, setback requirements to preserve street-level openness, and rooftop gardens might capture both urban vitality and psychological comfort.\nReducing car dominance: The negative effects of road and vehicle coverage support road diets that convert vehicle lanes to pedestrian or green space, traffic calming, pedestrianization of key streets, and parking reform that reduces surface lots.\nAddressing equity: The strong negative effect of poverty rate highlights that happiness is not equally distributed. Investing in high-poverty neighborhoods—parks, streetscaping, façade improvements—could begin to address this imbalance.\nEmbracing mixed-use: The owner-occupancy paradox suggests purely residential areas, however safe and well-maintained, may not generate happiness. Mixed-use zoning that allows retail, services, and housing together; 15-minute neighborhoods where daily needs are within walking distance; “third places” like cafés and libraries that foster social interaction—these may matter more than homeownership rates for urban happiness.",
+    "crumbs": [
+      "Results"
+    ]
+  },
+  {
+    "objectID": "analysis/4-results.html#future-directions",
+    "href": "analysis/4-results.html#future-directions",
+    "title": "Results & Discussion",
+    "section": "Future Directions",
+    "text": "Future Directions\nThis study opens several avenues for future research. Expanding positive samples through crowdsourced happiness mapping could provide hundreds or thousands of points, dramatically improving statistical power. Temporal analysis comparing street view images across seasons and years would reveal whether happiness correlates with greenery only when trees are leafed out. Multi-city comparison would test whether the same features predict happiness in different urban contexts. Sky View Factor calculation would provide a more perceptually accurate measure of openness. And qualitative validation—actually interviewing respondents about why they chose specific locations—would ground our quantitative findings in human experience.",
+    "crumbs": [
+      "Results"
+    ]
+  },
+  {
+    "objectID": "analysis/4-results.html#what-weve-learned",
+    "href": "analysis/4-results.html#what-weve-learned",
+    "title": "Results & Discussion",
+    "section": "What We’ve Learned",
+    "text": "What We’ve Learned\nUrban happiness is measurable and predictable from environmental features—at least partially. Sky visibility and building density correlate positively with happiness; road coverage correlates negatively. High-homeownership neighborhoods are less likely to contain happiness points, suggesting “livability” and “happiness” are distinct concepts. Education and income predict happiness; poverty predicts its absence.\nBut the numbers only tell part of the story. Some happy places are hidden from street view cameras. Some happiness comes from memory, not environment. Some variation is seasonal, daily, personal.",
+    "crumbs": [
+      "Results"
+    ]
+  },
+  {
+    "objectID": "analysis/4-results.html#a-final-reflection",
+    "href": "analysis/4-results.html#a-final-reflection",
+    "title": "Results & Discussion",
+    "section": "A Final Reflection",
+    "text": "A Final Reflection\nThis project demonstrates how street-level imagery and machine learning can be combined to study urban emotion at scale. It extends psychological theories of place and well-being into a computational framework, transforming visual data into measurable indicators of how cities make people feel.\nBut we should be humble about what we’ve captured. Everyone living in Philadelphia has their own list of happy places, and there is never a single right answer to what happiness means. The Cat Park with its friendly felines, the bustling atmosphere of Mango Mango Desserts, the cozy corner of Maison Sweet where you might stay longer than planned—these are not places we can fully quantify. A grandmother’s kitchen. A spot by the river where someone proposed. The bench where you sat crying after a breakup and a stranger offered you a tissue.\nHappiness is environmental, yes. But it’s also biographical. Our models can find the patterns that connect happy places; they cannot explain why a particular place became your happy place.\nWhat we hope is that by mapping these patterns, we might help create more spaces where happiness can happen—even if we can’t predict exactly who will find joy there, or why.\nA lot of things need fixing in Philly, but there are a lot of good things here.",
+    "crumbs": [
+      "Results"
+    ]
+  },
+  {
+    "objectID": "introduction.html",
+    "href": "introduction.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "What makes a person truly happy? It might be a good night’s sleep, a shared meal with friends, or simply standing in a place that feels right. The Swiss psychoanalyst Carl Jung wrote extensively about the relationship between our inner world and the external environment, suggesting that this connection is vital to psychological health. In simple terms, intricate neural pathways transform sensory input and cognitive processing into a direct and embodied awareness: I am happy here.\nAcross cultures and histories, “happy places” share certain universal features. They are often safe, aesthetically pleasing, socially engaging, and meaningful. While beauty and safety contribute to a sense of well-being, humanistic psychologists such as Abraham Maslow emphasized the deeper importance of belonging, social connection, and purpose. Happiness, therefore, arises not merely from visual or material comfort, but from an interplay of physical, emotional, and social dimensions of place.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "introduction.html#what-makes-a-place-feel-happy",
+    "href": "introduction.html#what-makes-a-place-feel-happy",
+    "title": "Introduction",
+    "section": "",
+    "text": "What makes a person truly happy? It might be a good night’s sleep, a shared meal with friends, or simply standing in a place that feels right. The Swiss psychoanalyst Carl Jung wrote extensively about the relationship between our inner world and the external environment, suggesting that this connection is vital to psychological health. In simple terms, intricate neural pathways transform sensory input and cognitive processing into a direct and embodied awareness: I am happy here.\nAcross cultures and histories, “happy places” share certain universal features. They are often safe, aesthetically pleasing, socially engaging, and meaningful. While beauty and safety contribute to a sense of well-being, humanistic psychologists such as Abraham Maslow emphasized the deeper importance of belonging, social connection, and purpose. Happiness, therefore, arises not merely from visual or material comfort, but from an interplay of physical, emotional, and social dimensions of place.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "introduction.html#philadelphia-a-city-of-brotherly-love",
+    "href": "introduction.html#philadelphia-a-city-of-brotherly-love",
+    "title": "Introduction",
+    "section": "Philadelphia: A City of Brotherly Love",
+    "text": "Philadelphia: A City of Brotherly Love\nThis connection between environment and emotion is not abstract. In Philadelphia—the city of brotherly love and sisterly affection—it has recently taken tangible form through the work of psychology students at Drexel University’s Happiness Lab. In their participatory mapping project, 243 students identified local landmarks and hidden corners where they felt happiest. The resulting map curated 28 “happy places” across the city, ranging from small neighborhood parks to cozy cafés.\nAmong them, the Cat Park on North Natrona Street was cherished for its quiet charm and friendly felines, while Mango Mango Desserts in Chinatown was celebrated for its bustling atmosphere and sweet delights. A student favorite, Maison Sweet on Chestnut Street, was described as “the kind of café where you might stay longer than planned.”\nThese findings highlight that happiness in the urban environment is both universal and deeply personal. Each place evokes unique emotional responses shaped by memory, sensory experience, and social interaction. Yet collectively, they sketch an emotional geography of Philadelphia—a map not of buildings or roads, but of feelings.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "introduction.html#research-questions",
+    "href": "introduction.html#research-questions",
+    "title": "Introduction",
+    "section": "Research Questions",
+    "text": "Research Questions\nBuilding upon this psychological and experiential foundation, our project seeks to explore these patterns from a computational and visual perspective. Rather than relying solely on self-reported happiness, we aim to analyze how the physical appearance of streets—captured through street-view imagery—relates to the kinds of environments people describe as “happy places.”\nThis study addresses three core questions:\n\nCan we predict urban happiness from measurable features? Using machine learning, can we distinguish locations that people identify as “happy” from random street locations based on visual and socioeconomic characteristics?\nWhat visual features characterize happy places? Do happy locations have more vegetation, more sky visibility, less road coverage? How do building density and vehicle presence relate to happiness?\nWhat is the relationship between neighborhood demographics and happiness? How do income, education, homeownership, and other socioeconomic factors interact with the physical environment to produce happy places?",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "introduction.html#the-challenge-from-feeling-to-data",
+    "href": "introduction.html#the-challenge-from-feeling-to-data",
+    "title": "Introduction",
+    "section": "The Challenge: From Feeling to Data",
+    "text": "The Challenge: From Feeling to Data\n\nThe Happiness Dataset\nOur positive samples come from the Drexel University survey—28 unique happiness points across Philadelphia, concentrated in urban cores, parks, and waterfront areas. These represent places where real people reported genuine emotional connections.\n\n\nThe Problem of Unlabeled Data\nA critical insight motivates our methodological approach: the absence of a happiness label does not mean a location is unhappy. The ~40,000 road sampling points throughout Philadelphia are unlabeled, not negative. Someone might feel just as happy at an unlabeled park as at a labeled one—they simply weren’t surveyed.\nThis is why we employ Positive-Unlabeled (PU) Learning rather than standard binary classification. PU Learning treats unlabeled data appropriately, avoiding the bias that would result from assuming all non-labeled points are unhappy.\n\n\nData Sources\n\n\n\n\n\n\n\n\nSource\nDescription\nCoverage\n\n\n\n\nHappiness Points\nStudent-identified happy locations\n28 points\n\n\nRoad Network\nPhiladelphia street centerlines\n47,000 segments\n\n\nGoogle Street View\n360° panoramic imagery\n~40,000 images\n\n\nCensus ACS 2022\nSocioeconomic variables\n384 tracts",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "introduction.html#theoretical-framework",
+    "href": "introduction.html#theoretical-framework",
+    "title": "Introduction",
+    "section": "Theoretical Framework",
+    "text": "Theoretical Framework\nOur approach bridges several research traditions:\nEnvironmental Psychology: Research on restorative environments suggests that natural elements (vegetation, sky, water) promote psychological well-being. We operationalize this through semantic segmentation of street view imagery.\nUrban Vitality: Jane Jacobs’ work emphasizes that lively, mixed-use neighborhoods foster human connection. Our finding that building density predicts happiness (while owner-occupancy does not) aligns with this perspective.\nSpatial Analytics: By combining computer vision with spatial modeling, we can scale subjective assessments to city-wide predictions, enabling evidence-based planning interventions.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "introduction.html#what-we-hope-to-achieve",
+    "href": "introduction.html#what-we-hope-to-achieve",
+    "title": "Introduction",
+    "section": "What We Hope to Achieve",
+    "text": "What We Hope to Achieve\nEveryone living in Philadelphia has their own list of happy places, and there is never a single right answer to what happiness means. What we hope to do is to share that happiness—to map it, visualize it, and, in our own way, help create more of it.\nThrough this integration of psychological insight and data-driven urban analysis, the project aspires to reveal how the city’s visual form mirrors its emotional landscape—and perhaps, to help uncover new happy places waiting to be found.\n\nContinue to Methodology: Data Collection →",
+    "crumbs": [
+      "Introduction"
+    ]
+  }
+]

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philadelphia Street View Happiness Map</title>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0a0a0f;
+        }
+
+        #map {
+            width: 100%;
+            height: 100vh;
+        }
+
+        /* Title overlay */
+        .title-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background: rgba(15, 15, 25, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 20px 30px;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        .title-container h1 {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .title-container p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px;
+        }
+
+        /* Stats panel */
+        .stats-panel {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: rgba(15, 15, 25, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 20px 25px;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        .stats-panel h3 {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .stat-value {
+            color: #fff;
+            font-size: 32px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 12px;
+            margin-top: 4px;
+        }
+
+        /* Legend */
+        .legend {
+            position: absolute;
+            bottom: 40px;
+            left: 20px;
+            z-index: 1000;
+            background: rgba(15, 15, 25, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 16px 20px;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .legend-color {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            margin-right: 12px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            box-shadow: 0 0 12px rgba(240, 147, 251, 0.6);
+        }
+
+        .legend-text {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 13px;
+        }
+
+        /* Popup styling */
+        .mapboxgl-popup-content {
+            background: rgba(15, 15, 25, 0.95) !important;
+            backdrop-filter: blur(10px);
+            border-radius: 12px !important;
+            padding: 15px 20px !important;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5) !important;
+        }
+
+        .mapboxgl-popup-close-button {
+            color: rgba(255, 255, 255, 0.6) !important;
+            font-size: 18px !important;
+            right: 8px !important;
+            top: 8px !important;
+        }
+
+        .mapboxgl-popup-close-button:hover {
+            color: #fff !important;
+        }
+
+        .popup-content {
+            color: #fff;
+        }
+
+        .popup-title {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .popup-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px;
+            font-size: 12px;
+            gap: 20px;
+        }
+
+        .popup-label {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .popup-value {
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .mapboxgl-popup-tip {
+            border-top-color: rgba(15, 15, 25, 0.95) !important;
+        }
+
+        /* Controls styling */
+        .mapboxgl-ctrl-group {
+            background: rgba(15, 15, 25, 0.9) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            border-radius: 8px !important;
+            overflow: hidden;
+        }
+
+        .mapboxgl-ctrl-group button {
+            background: transparent !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+        }
+
+        .mapboxgl-ctrl-group button:last-child {
+            border-bottom: none !important;
+        }
+
+        .mapboxgl-ctrl-group button span {
+            filter: invert(1);
+        }
+
+        /* Loading indicator */
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2000;
+            color: #fff;
+            font-size: 18px;
+            background: rgba(15, 15, 25, 0.9);
+            padding: 20px 40px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .spinner {
+            width: 24px;
+            height: 24px;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            border-top-color: #f093fb;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    
+    <div class="title-container">
+        <h1>Philadelphia Happiness Map</h1>
+        <p>Street View Point Distribution Analysis</p>
+    </div>
+
+    <div class="stats-panel">
+        <h3>Statistics</h3>
+        <div class="stat-item">
+            <div class="stat-value" id="total-points">0</div>
+            <div class="stat-label">Total Points</div>
+        </div>
+    </div>
+
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-color"></div>
+            <div class="legend-text">Happiness Point</div>
+        </div>
+    </div>
+
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <span>Loading map...</span>
+    </div>
+
+    <script>
+        // ============================================
+        // IMPORTANT: Replace with your Mapbox token
+        // Get your free token at: https://mapbox.com/
+        // ============================================
+        mapboxgl.accessToken = 'pk.eyJ1IjoieWFuZ2YwMzA0IiwiYSI6ImNsdjBwMXVlczBrajUyanIzZmZ1YjJwcDMifQ.BTXzKmDSK-H1RskghI7p9g';
+
+        // CSV data embedded (from gsv_metadata_happy.csv)
+        const csvData = `pano_id,lat,lon,date,status,point_id,original_lat,original_lon,old_pano_id
+TdgfJy6mW-RxXWF3w10PzA,39.94697963477851,-75.15096978974914,2023-04,OK,46159,39.94687840000006,-75.1509716999999,
+7fxU5aDxWqvtI3lmblf2RQ,39.96398177690816,-75.18915915537515,2024-07,OK,46160,39.96397040000005,-75.1892906999999,
+exG2DRKgxA4t9gdnBU5uug,39.95266306896693,-75.18332977404839,2018-02,OK,46161,39.95266310000005,-75.18332979999991,CAoSF0NJSE0wb2dLRUlDQWdJRDR2Y0R4dEFF
+hL1MW6VcePs87CW5DtbqOA,39.96114317961838,-75.18759381697318,2014-08,OK,46162,39.96119760000004,-75.1876049999999,
+F08NyX81a5_TqQNkaE10OQ,39.95566339222933,-75.15045023645258,2022-07,OK,46163,39.95566340000002,-75.15045019999991,CAoSFkNJSE0wb2dLRUlDQWdJRE85YkhNQmc.
+177Csfd8e6xqewWrF-dq5A,39.96556149820333,-75.13506024274896,2019-12,OK,46164,39.96556150000003,-75.13506019999996,CAoSF0NJSE0wb2dLRUlDQWdJQ2NvckhfNXdF
+gkG_zMm_kd5sezfg4OcyCw,39.95424489705292,-75.18799605515703,2020-06,OK,46165,39.954070700000045,-75.18801819999993,CAoSFkNJSE0wb2dLRUlDQWdJRGF5YzIyVXc.
+-aRQCBKNy3NdBK-PuPACuQ,39.94921945732197,-75.19828237916292,2009-06,OK,46166,39.94916550000004,-75.19830029999991,
+TM6rMKlK1XRzLLSlCsH_mQ,39.95178822575437,-75.1690006499177,2016-09,OK,46167,39.95180020000004,-75.1690347999999,
+eOAnrCgUyaMSyDylgN7qIQ,39.96904652235475,-75.13430751315433,2018-04,OK,46168,39.96903720000006,-75.13432299999994,CAoSF0NJSE0wb2dLRUlDQWdJQ2s2cG1JX0FF
+AWP7aNdgSxdU68scr7GwgQ,39.94672469626569,-75.16521662101916,2016-11,OK,46169,39.946793500000055,-75.16529699999995,CAoSFkNJSE0wb2dLRUlDQWdJRDRtdTNIYlE.
+jJkm1xU1q2wDq3tZ6HIXKA,39.95705986393577,-75.19054591791863,2024-08,OK,46170,39.95705020000008,-75.1905526999999,
+fk-iqVakM1G5ExWVaCImdQ,39.958033270271,-75.17096037682524,2022-08,OK,46171,39.95803330000007,-75.1709603999999,CAoSFkNJSE0wb2dLRUlDQWdJRHU5T3ZIZGc.
+S6xfyUE8VjXoiZMYAJH5ow,39.95313996421869,-75.18323199396806,2021-09,OK,46172,39.95311020000007,-75.1832508999999,CAoSFkNJSE0wb2dLRUlDQWdJQ090cE9nTFE.
+afxlCklgY7GlYrWQwPEp-A,39.95456741721313,-75.15655418909175,2020-10,OK,46173,39.95462310000007,-75.1566059999999,CAoSF0NJSE0wb2dLRUlDQWdJQ2lzck9VOUFF
+o4kCdpe7yPCEt_3Ivx-rKA,39.95306509196332,-75.17640282165287,2017-10,OK,46174,39.95323080000008,-75.17636979999992,CAoSF0NJSE0wb2dLRUlDQWdJRDQwdXVHMVFF
+1ghJu8IvDT83BZjBAm-QAw,39.94682858750966,-75.14067397789866,2022-12,OK,46175,39.94682860000006,-75.14067399999993,CAoSF0NJSE0wb2dLRUlDQWdJQ0I5SWJhcXdF
+5ZMsxd56QX-zKypSagnWog,39.95095624685283,-75.16465017834572,2025-05,OK,46176,39.95088840000006,-75.1646624999999,
+apszyFyQeH4WZoaO6u6S3w,39.96556973706222,-75.18096611497603,2017-07,OK,46177,39.96556970000006,-75.18096609999992,CAoSFkNJSE0wb2dLRUlDQWdJRDRfWUQzUlE.
+HJ26mtG5-MVFiDyynQomfQ,39.97149715213356,-75.19551643692041,2016-10,OK,46178,39.97149590000003,-75.19553829999995,
+I36poPLDnmxOd1GOhoQrIA,39.94946206236954,-75.17189149526212,2023-04,OK,46179,39.94946210000006,-75.1718914999999,CAoSF0NJSE0wb2dLRUlDQWdJQ1J5YVNaM3dF
+mD9QXlrwZQia9AMZY_8jEA,39.95780339447602,-75.1785645716321,2019-05,OK,46180,39.95779840000005,-75.17856649999993,CAoSF0NJSE0wb2dLRUlDQWdJRGF5YnU4dlFF
+hN4HxR-Nw480_r1Z3Eb7Hg,39.9813874230782,-75.21294292654788,2023-03,OK,46181,39.98138740000006,-75.21294289999992,CAoSFkNJSE0wb2dLRUlDQWdJQ1J0cktSUWc.
+ee7yqSGFv-65J07FDCoIAA,39.98137752482289,-75.15903793926772,2020-02,OK,46182,39.98146090000006,-75.15961639999995,CAoSF0NJSE0wb2dLRUlDQWdJRGEyY0M5OEFF
+4J7juM6boLzpKf8-36ZSzA,39.95503639985998,-75.15623826436108,2019-10,OK,46183,39.95510000000007,-75.15623189999991,CAoSFkNJSE0wb2dLRUlDQWdJQ01scmptUFE.
+CrCgAryWZwoAy8JK6su2UQ,39.96553606100827,-75.18296100568512,2019-05,OK,46184,39.965523700000055,-75.18295779999994,CAoSF0NJSE0wb2dLRUlDQWdJRGF5ZDZHM0FF
+dS-RhmPeu1_Fee4AQdn5aQ,39.947036734174,-75.15239394307909,2020-11,OK,46185,39.94703670000007,-75.15239389999994,CAoSF0NJSE0wb2dLRUlDQWdJQ2lqN2VrM3dF
+rs764f8TIlVgfBwRB7MLXg,39.95622600659735,-75.13987735989078,2019-11,OK,46186,39.95622600000007,-75.13987739999993,CAoSF0NJSE0wb2dLRUlDQWdJQ01vTGYzbXdF`;
+
+        // Parse CSV data
+        function parseCSV(csv) {
+            const lines = csv.trim().split('\n');
+            const headers = lines[0].split(',');
+            const data = [];
+            
+            for (let i = 1; i < lines.length; i++) {
+                const values = lines[i].split(',');
+                const row = {};
+                headers.forEach((header, index) => {
+                    row[header] = values[index];
+                });
+                data.push(row);
+            }
+            return data;
+        }
+
+        // Convert to GeoJSON
+        function toGeoJSON(data) {
+            return {
+                type: 'FeatureCollection',
+                features: data.map(row => ({
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [parseFloat(row.lon), parseFloat(row.lat)]
+                    },
+                    properties: {
+                        pano_id: row.pano_id,
+                        point_id: row.point_id,
+                        status: row.status
+                    }
+                }))
+            };
+        }
+
+        // Initialize data
+        const parsedData = parseCSV(csvData);
+        const geojsonData = toGeoJSON(parsedData);
+
+        // Update stats display
+        document.getElementById('total-points').textContent = parsedData.length;
+
+        // Initialize map
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/dark-v11',
+            center: [-75.165, 39.955],
+            zoom: 12,
+            pitch: 45,
+            bearing: -17.6
+        });
+
+        // Add navigation controls
+        map.addControl(new mapboxgl.NavigationControl(), 'bottom-right');
+
+        map.on('load', () => {
+            // Hide loading
+            document.getElementById('loading').style.display = 'none';
+
+            // Add source
+            map.addSource('points', {
+                type: 'geojson',
+                data: geojsonData
+            });
+
+            // Add heatmap layer for density visualization
+            map.addLayer({
+                id: 'points-heat',
+                type: 'heatmap',
+                source: 'points',
+                maxzoom: 15,
+                paint: {
+                    'heatmap-weight': 1,
+                    'heatmap-intensity': [
+                        'interpolate',
+                        ['linear'],
+                        ['zoom'],
+                        0, 1,
+                        15, 3
+                    ],
+                    'heatmap-color': [
+                        'interpolate',
+                        ['linear'],
+                        ['heatmap-density'],
+                        0, 'rgba(0,0,0,0)',
+                        0.2, 'rgba(240, 147, 251, 0.2)',
+                        0.4, 'rgba(240, 147, 251, 0.4)',
+                        0.6, 'rgba(245, 87, 108, 0.5)',
+                        0.8, 'rgba(245, 87, 108, 0.7)',
+                        1, 'rgba(255, 255, 255, 0.8)'
+                    ],
+                    'heatmap-radius': [
+                        'interpolate',
+                        ['linear'],
+                        ['zoom'],
+                        0, 2,
+                        15, 20
+                    ],
+                    'heatmap-opacity': [
+                        'interpolate',
+                        ['linear'],
+                        ['zoom'],
+                        12, 0.8,
+                        15, 0.4
+                    ]
+                }
+            });
+
+            // Add glow effect layer (behind circles)
+            map.addLayer({
+                id: 'points-glow',
+                type: 'circle',
+                source: 'points',
+                minzoom: 10,
+                paint: {
+                    'circle-radius': [
+                        'interpolate',
+                        ['linear'],
+                        ['zoom'],
+                        10, 8,
+                        15, 20,
+                        18, 30
+                    ],
+                    'circle-color': '#f093fb',
+                    'circle-opacity': 0.2,
+                    'circle-blur': 1
+                }
+            });
+
+            // Add circle layer for points
+            map.addLayer({
+                id: 'points-circle',
+                type: 'circle',
+                source: 'points',
+                minzoom: 10,
+                paint: {
+                    'circle-radius': [
+                        'interpolate',
+                        ['linear'],
+                        ['zoom'],
+                        10, 4,
+                        15, 8,
+                        18, 12
+                    ],
+                    'circle-color': '#f093fb',
+                    'circle-opacity': 0.9,
+                    'circle-stroke-width': 1.5,
+                    'circle-stroke-color': 'rgba(245, 87, 108, 0.6)',
+                    'circle-blur': 0.05
+                }
+            });
+
+            // Popup on click
+            map.on('click', 'points-circle', (e) => {
+                const coordinates = e.features[0].geometry.coordinates.slice();
+                const props = e.features[0].properties;
+
+                const popupContent = `
+                    <div class="popup-content">
+                        <div class="popup-title">Happiness Point</div>
+                        <div class="popup-row">
+                            <span class="popup-label">Point ID</span>
+                            <span class="popup-value">${props.point_id}</span>
+                        </div>
+                        <div class="popup-row">
+                            <span class="popup-label">Status</span>
+                            <span class="popup-value">${props.status}</span>
+                        </div>
+                        <div class="popup-row">
+                            <span class="popup-label">Lat</span>
+                            <span class="popup-value">${coordinates[1].toFixed(6)}</span>
+                        </div>
+                        <div class="popup-row">
+                            <span class="popup-label">Lon</span>
+                            <span class="popup-value">${coordinates[0].toFixed(6)}</span>
+                        </div>
+                    </div>
+                `;
+
+                new mapboxgl.Popup()
+                    .setLngLat(coordinates)
+                    .setHTML(popupContent)
+                    .addTo(map);
+            });
+
+            // Change cursor on hover
+            map.on('mouseenter', 'points-circle', () => {
+                map.getCanvas().style.cursor = 'pointer';
+            });
+
+            map.on('mouseleave', 'points-circle', () => {
+                map.getCanvas().style.cursor = '';
+            });
+        });
+    </script>
+</body>
+</html>

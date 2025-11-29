@@ -1,0 +1,168 @@
+---
+title: "Results & Discussion"
+subtitle: "Key Findings and Urban Planning Implications"
+---
+
+## How Well Does the Model Perform?
+
+Our PU Learning approach achieved strong predictive performance, with Logistic Regression reaching an AUC of 0.968—meaning if we randomly select one happiness point and one reliable negative, the model correctly ranks them 96.8% of the time.
+
+![ROC Curves showing model performance](../images/roc_curve.png){width=70%}
+
+| Metric | Logistic Regression | Random Forest |
+|--------|-------------------|---------------|
+| AUC-ROC | 0.968 ± 0.013 | 0.939 ± 0.045 |
+| Training samples | 28 positive + ~9,000 negative |
+| Features | 13 (6 visual + 7 socioeconomic) |
+
+The high AUC suggests happiness points are systematically different from random street locations in measurable ways. But as we'll discuss later, this strong performance comes with important caveats.
+
+---
+
+## What Predicts Happiness?
+
+The lollipop chart visualizes the direction and magnitude of each feature's effect:
+
+![Feature Effects on Happiness (Lollipop Chart)](../images/lollipop_chart.png){width=90%}
+
+**Building Ratio** emerges as the strongest positive predictor (+1.00), indicating happiness points cluster in denser urban areas rather than sparse residential neighborhoods. **Owner Occupied Rate** shows the strongest negative effect (-2.10)—our most counterintuitive finding. **College Education** and **Sky Ratio** are strong positive predictors, while **Poverty Rate** and **Road Ratio** pull strongly negative.
+
+![Feature Importance Rose Chart](../images/rose_chart.png){width=80%}
+
+The rose chart offers another view: socioeconomic factors (owner-occupancy, poverty, education) have larger magnitudes than most visual features. This hints that neighborhood context matters as much as—perhaps more than—what you can see in a photograph.
+
+| Rank | Positive Factors | Coefficient | | Rank | Negative Factors | Coefficient |
+|------|-----------------|-------------|---|------|-----------------|-------------|
+| 1 | building_ratio | +1.00 | | 1 | pct_owner_occupied | -2.10 |
+| 2 | pct_college | +0.70 | | 2 | poverty_rate | -1.28 |
+| 3 | sky_ratio | +0.58 | | 3 | road_ratio | -1.23 |
+| 4 | median_income | +0.18 | | 4 | vehicle_ratio | -0.29 |
+| 5 | green_view_index | +0.06 | | 5 | person_ratio | -0.24 |
+
+---
+
+## The Owner-Occupancy Paradox
+
+The most striking finding is the strong **negative** relationship between homeownership rate and happiness. Traditional urban planning often equates high homeownership with neighborhood quality—homeowners invest in maintenance, stable populations build community, crime rates tend to be lower. Yet our model finds the opposite relationship.
+
+We hypothesize that **what makes a neighborhood good for living differs from what makes a place feel happy**. High-ownership neighborhoods are typically quiet, safe, single-use residential areas—pleasant to live in, but not places you'd visit for joy. They're car-dependent, with few spontaneous social encounters. Happiness points, by contrast, cluster in mixed-use urban areas: walkable, with nearby amenities, active street life, diverse activities and people.
+
+The data supports this interpretation:
+
+| Metric | Happiness Points | City Average |
+|--------|-----------------|--------------|
+| Owner-occupancy | 34.2% | 52.3% |
+| Building ratio | 21.3% | 18.8% |
+| Road ratio | 19.6% | 22.3% |
+
+Happiness points sit in areas with 18 percentage points lower owner-occupancy, 2.5 points higher building density, and 2.7 points lower road coverage. This pattern describes walkable, urban neighborhoods rather than suburban residential streets.
+
+---
+
+## Visual Environment: What You See Matters
+
+**Sky visibility** emerged as a significant positive predictor (+0.58). Visible sky reduces feelings of confinement; better daylight improves mood; tall buildings blocking the sky create oppressive urban canyons. This aligns with decades of environmental psychology research.
+
+**Building density** predicts higher happiness (+1.00)—perhaps counterintuitively. But dense areas have more amenities, services, activities, and social interaction opportunities. The key is that both building_ratio and sky_ratio are positive predictors simultaneously, suggesting happiness is found in **moderately dense** environments: enough urban vitality to be interesting, not so much as to feel oppressive. Mid-rise neighborhoods, not sprawling suburbs or canyon-like downtowns.
+
+**Road coverage** is a strong negative predictor (-1.23). More road means less space for pedestrians, bikes, and greenery. It indicates traffic noise and pollution exposure. Wide roads create barriers to crossing, fragmenting neighborhoods. The "livable streets" movement has long argued that car-centric design diminishes quality of life; our data supports this.
+
+---
+
+## Socioeconomic Context
+
+**Education and income** both positively predict happiness. Higher-income areas tend to have better maintenance, higher-quality amenities, and more investment in public spaces. There's also likely a selection effect: survey respondents (university students) may gravitate toward areas similar to their own neighborhoods.
+
+**Poverty rate** shows a strong negative effect (-1.28), reflecting the accumulated disadvantages of high-poverty neighborhoods: deferred maintenance, visible decay, safety concerns, and fewer commercial establishments. Happiness, it seems, is not equally distributed across the city.
+
+---
+
+## Mapping Happiness Across Philadelphia
+
+After scoring all ~40,000 points, we can visualize predicted happiness across the city:
+
+<div style="width: 100%; height: 600px; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,0.3);">
+<iframe src="../images/kriging_happiness_map.html" width="100%" height="100%" style="border: none;"></iframe>
+</div>
+
+*Interactive map: Drag to pan, scroll to zoom. Adjust layer opacity with the slider.*
+
+The spatial pattern is clear. Highest scores concentrate in Center City, University City, Fairmount, and Northern Liberties—dense, mixed-use, walkable neighborhoods. Moderate scores appear in inner-ring neighborhoods with mixed uses. Lowest scores mark outer residential areas, industrial zones, and highway corridors.
+
+This isn't surprising given our model's coefficients, but seeing it mapped across the city makes the pattern visceral. The happy places form a connected archipelago in the urban core, surrounded by a sea of lower-scoring residential and industrial areas.
+
+---
+
+## Limitations: What This Study Cannot Tell Us
+
+Strong model performance doesn't mean we've solved urban happiness. Several limitations deserve honest acknowledgment.
+
+### The Problem of 28 Points
+
+With only 28 positive samples, statistical power is limited. Unusual characteristics of individual points may unduly influence results. Cross-validation produces small validation sets of just 5-6 positives per fold. We can identify broad patterns, but detecting subtle effects is beyond our reach. A study with hundreds or thousands of happiness points would be far more robust.
+
+### The Gap Between Happiness and Its Proxy
+
+We couldn't capture street view imagery at the exact happiness point locations. Instead, we used the nearest sampling point's imagery—sometimes tens or hundreds of meters away. Some happiness points are "secret gardens" that students discovered: hidden courtyards, rooftop terraces, tucked-away benches. These intimate spaces don't appear in street-level panoramas at all. This spatial mismatch may explain why **green view index shows such weak predictive power** (+0.06). The actual happy places might be far greener than what our proxy images capture.
+
+### Census Data Is Too Coarse
+
+Census tract-level socioeconomic data averages over roughly 4,100 residents per tract. A street corner in a nominally wealthy tract may actually be surrounded by lower-income residents, but our data cannot capture this intra-tract variation. We're assigning neighborhood-level characteristics to point-level observations—an ecological fallacy risk that's difficult to avoid without finer-grained data.
+
+### Happiness Isn't Always About Environment
+
+Our model assumes happiness derives from measurable environmental and socioeconomic features. But some places are happy not because of what they look like, but because of what happened there. A nondescript bench where someone had their first kiss. An ordinary-looking café where friends gather every Sunday. A street corner that reminds someone of childhood. These **places of memory** can bring profound happiness despite being visually unremarkable. No amount of semantic segmentation can capture why a place matters to someone.
+
+### Temporal Blindness
+
+Our analysis uses static data: street view images from a single moment, Census data averaged over five years. We don't account for seasonal variation—and this matters more than it might seem. Philadelphia's Green View Index plummets in winter when deciduous trees are bare. A street that feels lush and alive in July can look stark and gray in January. Should we process winter and summer imagery separately? Our current approach treats them identically, potentially washing out seasonal effects. We also miss weekly and daily rhythms: the same plaza might feel vibrant on a Saturday afternoon and desolate on a Tuesday morning.
+
+### Sky Ratio vs. Sky View Factor
+
+We measure simple sky pixel proportion, but the more sophisticated **Sky View Factor (SVF)** accounts for hemispherical projection and better represents human perception of openness. SVF would weight overhead sky more heavily than sky near the horizon, matching how we actually experience urban space. This is a methodological improvement worth pursuing in future work.
+
+### Correlation, Not Causation
+
+This is a correlational study. We cannot claim that building density *causes* happiness. The relationship could be confounded (both caused by a third factor), reversed (happy people might seek out dense areas), or more complex than our linear model can capture.
+
+---
+
+## Implications for Urban Planning
+
+Despite these limitations, our findings suggest several considerations for those who shape cities.
+
+**Rethinking density**: The simultaneous positive effects of building density and sky visibility suggest an optimal density range. Mid-rise development, setback requirements to preserve street-level openness, and rooftop gardens might capture both urban vitality and psychological comfort.
+
+**Reducing car dominance**: The negative effects of road and vehicle coverage support road diets that convert vehicle lanes to pedestrian or green space, traffic calming, pedestrianization of key streets, and parking reform that reduces surface lots.
+
+**Addressing equity**: The strong negative effect of poverty rate highlights that happiness is not equally distributed. Investing in high-poverty neighborhoods—parks, streetscaping, façade improvements—could begin to address this imbalance.
+
+**Embracing mixed-use**: The owner-occupancy paradox suggests purely residential areas, however safe and well-maintained, may not generate happiness. Mixed-use zoning that allows retail, services, and housing together; 15-minute neighborhoods where daily needs are within walking distance; "third places" like cafés and libraries that foster social interaction—these may matter more than homeownership rates for urban happiness.
+
+---
+
+## Future Directions
+
+This study opens several avenues for future research. **Expanding positive samples** through crowdsourced happiness mapping could provide hundreds or thousands of points, dramatically improving statistical power. **Temporal analysis** comparing street view images across seasons and years would reveal whether happiness correlates with greenery only when trees are leafed out. **Multi-city comparison** would test whether the same features predict happiness in different urban contexts. **Sky View Factor calculation** would provide a more perceptually accurate measure of openness. And **qualitative validation**—actually interviewing respondents about why they chose specific locations—would ground our quantitative findings in human experience.
+
+---
+
+## What We've Learned
+
+Urban happiness is measurable and predictable from environmental features—at least partially. Sky visibility and building density correlate positively with happiness; road coverage correlates negatively. High-homeownership neighborhoods are less likely to contain happiness points, suggesting "livability" and "happiness" are distinct concepts. Education and income predict happiness; poverty predicts its absence.
+
+But the numbers only tell part of the story. Some happy places are hidden from street view cameras. Some happiness comes from memory, not environment. Some variation is seasonal, daily, personal.
+
+---
+
+## A Final Reflection
+
+This project demonstrates how street-level imagery and machine learning can be combined to study urban emotion at scale. It extends psychological theories of place and well-being into a computational framework, transforming visual data into measurable indicators of how cities make people feel.
+
+But we should be humble about what we've captured. Everyone living in Philadelphia has their own list of happy places, and there is never a single right answer to what happiness means. The Cat Park with its friendly felines, the bustling atmosphere of Mango Mango Desserts, the cozy corner of Maison Sweet where you might stay longer than planned—these are not places we can fully quantify. A grandmother's kitchen. A spot by the river where someone proposed. The bench where you sat crying after a breakup and a stranger offered you a tissue.
+
+Happiness is environmental, yes. But it's also biographical. Our models can find the patterns that connect happy places; they cannot explain why a particular place became *your* happy place.
+
+What we hope is that by mapping these patterns, we might help create more spaces where happiness can happen—even if we can't predict exactly who will find joy there, or why.
+
+**A lot of things need fixing in Philly, but there are a lot of good things here.**

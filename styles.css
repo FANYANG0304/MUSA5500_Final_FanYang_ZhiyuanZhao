@@ -1,0 +1,1278 @@
+/* Custom styles for Urban Happiness website */
+/* Color palette: Warm cream background with earthy accents */
+
+/* ============================================
+   ROOT VARIABLES - Easy color customization
+   ============================================ */
+:root {
+  /* Main background - warm cream/off-white from the image */
+  --bg-primary: #FAFAF7;
+  --bg-secondary: #F5F4F0;
+  --bg-tertiary: #EFEEE9;
+  
+  /* Text colors */
+  --text-primary: #2D2D2D;
+  --text-secondary: #5A5A5A;
+  --text-muted: #888888;
+  
+  /* Accent colors - earthy tones that complement cream */
+  --accent-primary: #6B8E6B;      /* Sage green - represents greenery/nature */
+  --accent-secondary: #8B7355;    /* Warm brown - represents urban/buildings */
+  --accent-tertiary: #7A9BBF;     /* Soft blue - represents sky */
+  
+  /* Highlight colors */
+  --highlight-green: #E8F0E8;
+  --highlight-blue: #E8F0F8;
+  --highlight-warm: #F5F0E8;
+  
+  /* Border colors */
+  --border-light: #E5E4E0;
+  --border-medium: #D5D4D0;
+}
+
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
+body {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary);
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* ============================================
+   FULL WIDTH LAYOUT - Force 100% width
+   ============================================ */
+/* Remove max-width constraints */
+.page-columns {
+  max-width: 100% !important;
+}
+
+#quarto-content {
+  background-color: var(--bg-primary);
+  max-width: 100% !important;
+}
+
+/* Main content takes full available width */
+main.content {
+  background-color: var(--bg-primary);
+  max-width: 100% !important;
+}
+
+.content {
+  background-color: var(--bg-primary);
+  max-width: 100% !important;
+}
+
+/* Article body full width */
+.body-content {
+  max-width: 100% !important;
+}
+
+/* Column layout adjustments */
+.column-body {
+  max-width: 100% !important;
+}
+
+.column-page {
+  max-width: 100% !important;
+}
+
+/* Container adjustments */
+.container {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* Page layout grid */
+.page-layout-article {
+  grid-template-columns: minmax(0, 1fr) !important;
+}
+
+/* When sidebar is present */
+.page-columns.page-full {
+  grid-template-columns: 1fr !important;
+}
+
+/* Content grid - sidebar + main + toc */
+#quarto-document-content {
+  max-width: 100% !important;
+}
+
+/* Right margin/TOC positioning */
+.margin-sidebar, 
+#quarto-margin-sidebar {
+  position: sticky;
+  top: 20px;
+}
+
+/* Ensure text doesn't stretch too wide for readability */
+.content p,
+.content li {
+  max-width: 900px;
+}
+
+/* ============================================
+   SIDEBAR STYLING
+   ============================================ */
+.sidebar {
+  background-color: var(--bg-secondary) !important;
+  border-right: 1px solid var(--border-light);
+}
+
+.sidebar-logo {
+  max-width: 180px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+/* Hide logo image, show quote instead */
+.sidebar-logo img {
+  display: none;
+}
+
+.sidebar-logo::before {
+  content: '❝';
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 3rem;
+  line-height: 1;
+  color: #C4B4A4;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-logo::after {
+  content: 'Happiness is not a grand concept, happiness is every small moment you can feel.';
+  display: block;
+  font-family: Georgia, 'Palatino Linotype', serif;
+  font-size: 0.82rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: #6B5B4F;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
+/* ============================================
+   SIDEBAR NAVIGATION - Increased Spacing
+   ============================================ */
+.sidebar-navigation .nav-link {
+  color: var(--text-secondary);
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin: 4px 8px;
+  transition: all 0.2s ease;
+}
+
+.sidebar-navigation .nav-link:hover {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+.sidebar-navigation .nav-link.active {
+  background-color: var(--accent-primary);
+  color: white;
+}
+
+/* Sidebar section headers */
+.sidebar-section-item {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 1.25rem;
+}
+
+/* Sidebar item spacing */
+.sidebar-item {
+  padding: 0.15rem 0;
+}
+
+.sidebar-item-text {
+  padding: 0.5rem 0;
+}
+
+/* Section container spacing */
+.sidebar-item-section {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Sub-items in sections */
+.sidebar-item-section .sidebar-item {
+  padding-left: 0.5rem;
+}
+
+/* Quarto specific sidebar spacing */
+#quarto-sidebar .sidebar-menu-container {
+  padding: 0.5rem 0;
+}
+
+#quarto-sidebar .sidebar-item-container {
+  margin: 0.2rem 0;
+}
+
+#quarto-sidebar .sidebar-section .sidebar-item {
+  margin: 0.15rem 0;
+}
+
+/* ============================================
+   TITLE STYLING
+   ============================================ */
+.title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+}
+
+h1 { border-bottom: 2px solid var(--accent-primary); padding-bottom: 0.5rem; }
+h2 { border-bottom: 1px solid var(--border-light); padding-bottom: 0.3rem; }
+
+/* ============================================
+   ABSTRACT / INTRO BOX
+   ============================================ */
+.abstract {
+  background-color: var(--highlight-warm);
+  border-left: 4px solid var(--accent-secondary);
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+/* ============================================
+   KEY FINDINGS HIGHLIGHT
+   ============================================ */
+.key-finding {
+  background-color: var(--highlight-green);
+  border-left: 4px solid var(--accent-primary);
+  border-radius: 0 8px 8px 0;
+  padding: 1.25rem 1.5rem;
+  margin: 1rem 0;
+}
+
+.key-finding-blue {
+  background-color: var(--highlight-blue);
+  border-left: 4px solid var(--accent-tertiary);
+  border-radius: 0 8px 8px 0;
+  padding: 1.25rem 1.5rem;
+  margin: 1rem 0;
+}
+
+/* ============================================
+   CALLOUT BOXES (Quarto built-in)
+   ============================================ */
+.callout {
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+.callout-note {
+  background-color: var(--highlight-blue);
+  border-left-color: var(--accent-tertiary);
+}
+
+.callout-tip {
+  background-color: var(--highlight-green);
+  border-left-color: var(--accent-primary);
+}
+
+.callout-warning {
+  background-color: #FFF8E7;
+  border-left-color: #D4A04A;
+}
+
+.callout-important {
+  background-color: var(--highlight-warm);
+  border-left-color: var(--accent-secondary);
+}
+
+/* ============================================
+   IMAGE & FIGURE STYLING
+   ============================================ */
+figure {
+  margin: 1.5rem 0;
+}
+
+figure img {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: 0.75rem;
+  font-style: italic;
+}
+
+/* ============================================
+   CODE BLOCK STYLING
+   ============================================ */
+.sourceCode {
+  font-size: 0.85rem;
+  border-radius: 8px;
+  background-color: var(--bg-tertiary) !important;
+  border: 1px solid var(--border-light);
+}
+
+pre {
+  background-color: var(--bg-tertiary) !important;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+code {
+  background-color: var(--bg-tertiary);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* Code fold button */
+.code-fold-btn {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  color: var(--text-secondary);
+}
+
+.code-fold-btn:hover {
+  background-color: var(--bg-tertiary);
+}
+
+/* ============================================
+   TABLE STYLING
+   ============================================ */
+table {
+  width: 100%;
+  margin: 1.5rem 0;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+th {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 2px solid var(--border-medium);
+}
+
+td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-light);
+  background-color: var(--bg-primary);
+}
+
+tr:hover td {
+  background-color: var(--bg-secondary);
+}
+
+/* ============================================
+   TOC (Table of Contents) STYLING
+   ============================================ */
+#TOC {
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid var(--border-light);
+}
+
+#TOC a {
+  color: var(--text-secondary);
+}
+
+#TOC a:hover {
+  color: var(--accent-primary);
+}
+
+.toc-title {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+/* ============================================
+   CONTRIBUTOR INFO
+   ============================================ */
+.contributor {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--border-light);
+}
+
+.contributor-card {
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ============================================
+   KEYWORDS & TAGS
+   ============================================ */
+.keywords {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.keyword-tag {
+  display: inline-block;
+  background-color: var(--bg-tertiary);
+  color: var(--text-secondary);
+  padding: 0.35rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  margin: 0.25rem;
+  transition: all 0.2s ease;
+}
+
+.keyword-tag:hover {
+  background-color: var(--accent-primary);
+  color: white;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 768px) {
+  .contributor-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  /* Adjust sidebar spacing for mobile */
+  .sidebar-navigation .nav-link {
+    padding: 0.6rem 0.75rem;
+  }
+}
+
+/* ============================================
+   LINK STYLING
+   ============================================ */
+a {
+  color: var(--accent-primary);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #5A7D5A;
+}
+
+/* ============================================
+   BLOCKQUOTE STYLING
+   ============================================ */
+blockquote {
+  border-left: 4px solid var(--accent-primary);
+  padding-left: 1.25rem;
+  margin: 1.5rem 0;
+  color: var(--text-secondary);
+  font-style: italic;
+  background-color: var(--bg-secondary);
+  padding: 1rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+}
+
+/* ============================================
+   HR STYLING
+   ============================================ */
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--border-light);
+  margin: 2.5rem 0;
+}
+
+/* ============================================
+   SELECTION STYLING
+   ============================================ */
+::selection {
+  background-color: var(--accent-primary);
+  color: white;
+}
+
+/* ============================================
+   MODERN DESIGN SYSTEM VARIABLES
+   ============================================ */
+:root {
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+  
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  
+  /* Transitions */
+  --transition: all 0.2s ease;
+}
+
+/* ============================================
+   HERO SECTION - The Pudding Style
+   ============================================ */
+.hero-section {
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+  padding: 3.5rem 2.5rem;
+  margin: -1rem -1rem 2.5rem -1rem;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  position: relative;
+}
+
+.hero-content {
+  max-width: 750px;
+}
+
+.hero-section .hero-title {
+  font-size: 3.2rem !important;
+  font-weight: 800 !important;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: 1.35rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  margin-bottom: 1.75rem;
+  line-height: 1.5;
+}
+
+.hero-description {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.85rem 1.75rem;
+  background: var(--accent-primary);
+  color: white !important;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+  background: #5A7D5A;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 0.85rem 1.75rem;
+  background: transparent;
+  color: var(--accent-primary) !important;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  border: 2px solid var(--accent-primary);
+  transition: var(--transition);
+}
+
+.btn-secondary:hover {
+  background: var(--accent-primary);
+  color: white !important;
+}
+
+/* ============================================
+   METRICS SECTION - Dashboard Style
+   ============================================ */
+.metrics-section {
+  margin: 2.5rem 0;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+
+.metric-card {
+  background: white;
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid var(--border-light);
+}
+
+.metric-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.metric-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.metric-value {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  line-height: 1.2;
+}
+
+.metric-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 0.35rem;
+}
+
+.metric-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+/* ============================================
+   ABSTRACT BOX - Modern Card Style
+   ============================================ */
+.abstract-box {
+  background: white;
+  border-radius: var(--radius-md);
+  padding: 2rem 2.25rem;
+  box-shadow: var(--shadow-sm);
+  border-left: 4px solid var(--accent-primary);
+  margin: 2rem 0;
+  line-height: 1.8;
+}
+
+.abstract-box p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.abstract-box strong {
+  color: var(--text-primary);
+}
+
+/* ============================================
+   FINDINGS CARDS - The Pudding Style
+   ============================================ */
+.findings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.finding-card {
+  background: white;
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.finding-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.finding-card.positive::before {
+  background: var(--accent-primary);
+}
+
+.finding-card.negative::before {
+  background: #C17B7B;
+}
+
+.finding-card.insight::before {
+  background: var(--accent-tertiary);
+}
+
+.finding-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.finding-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.finding-card.positive .finding-icon {
+  background: var(--highlight-green);
+  color: var(--accent-primary);
+}
+
+.finding-card.negative .finding-icon {
+  background: #F8E8E8;
+  color: #C17B7B;
+}
+
+.finding-card.insight .finding-icon {
+  background: var(--highlight-blue);
+  color: var(--accent-tertiary);
+}
+
+.finding-content h4,
+.finding-content strong {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.finding-content p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ============================================
+   FRAMEWORK SECTION - Timeline Style
+   ============================================ */
+.framework-section {
+  position: relative;
+  padding-left: 2rem;
+  margin: 2.5rem 0;
+}
+
+.framework-section::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--accent-primary) 0%, var(--accent-tertiary) 100%);
+  border-radius: 2px;
+}
+
+.framework-step {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.framework-step::before {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  top: 0.5rem;
+  width: 12px;
+  height: 12px;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  border: 3px solid var(--bg-primary);
+  transform: translateX(-4.5px);
+}
+
+.step-number {
+  min-width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-tertiary) 100%);
+  color: white;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+  background: white;
+  padding: 1.5rem 1.75rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.step-content h3 {
+  margin-top: 0 !important;
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.step-content p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* ============================================
+   PREVIEW SECTION - Split Layout
+   ============================================ */
+.preview-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin: 2.5rem 0;
+  padding: 2rem;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+}
+
+.preview-text h4,
+.preview-text strong {
+  display: block;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.preview-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.preview-text li {
+  padding: 0.4rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--text-secondary);
+}
+
+.preview-text li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent-primary);
+  font-weight: bold;
+}
+
+.preview-text a {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.preview-image {
+  text-align: center;
+}
+
+.preview-chart {
+  max-width: 100%;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+/* ============================================
+   NAVIGATION CARDS - The Pudding Style
+   ============================================ */
+.nav-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.nav-card {
+  background: white;
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.75rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border-bottom: 3px solid transparent;
+}
+
+.nav-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-bottom-color: var(--accent-primary);
+}
+
+.nav-card h3 {
+  margin-top: 0 !important;
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.nav-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.nav-card a {
+  color: var(--accent-primary);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-card a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================
+   CONTRIBUTOR SECTION - Modern Cards
+   ============================================ */
+.contributor-section {
+  background: var(--bg-secondary);
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  margin: 2rem 0;
+}
+
+.contributor-section h2 {
+  margin-top: 0 !important;
+  border: none !important;
+}
+
+.contributor-cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
+
+.contributor-section .contributor-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: white;
+  padding: 1.25rem 1.75rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.contributor-section .contributor-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.contributor-avatar {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-tertiary));
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  line-height: 1;
+  padding-top: 15px;
+}
+
+.contributor-info strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  color: var(--text-primary);
+}
+
+.contributor-info {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.project-info {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-light);
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.project-info strong {
+  color: var(--text-primary);
+}
+
+.project-info a {
+  color: var(--accent-primary);
+}
+
+/* ============================================
+   KEYWORDS SECTION - Modern Tags
+   ============================================ */
+.keywords-section {
+  margin: 2.5rem 0;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.keywords-section .tag {
+  display: inline-block;
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  padding: 0.5rem 1.1rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  margin: 0.35rem;
+  transition: var(--transition);
+  border: 1px solid transparent;
+  cursor: default;
+}
+
+.keywords-section .tag:hover {
+  background: var(--accent-primary);
+  color: white;
+  border-color: var(--accent-primary);
+  transform: translateY(-1px);
+}
+
+/* ============================================
+   CLOSING QUOTE
+   ============================================ */
+.closing-quote {
+  text-align: center;
+  font-style: italic;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-section {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.metric-card,
+.finding-card,
+.nav-card {
+  animation: fadeInUp 0.6s ease-out;
+  animation-fill-mode: both;
+}
+
+.metric-card:nth-child(1) { animation-delay: 0.1s; }
+.metric-card:nth-child(2) { animation-delay: 0.2s; }
+.metric-card:nth-child(3) { animation-delay: 0.3s; }
+.metric-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* ============================================
+   RESPONSIVE DESIGN - Modern Components
+   ============================================ */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 2.5rem !important;
+  }
+  
+  .preview-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .preview-image {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2.5rem 1.5rem;
+    margin: -1rem 0 2rem 0;
+  }
+  
+  .hero-title {
+    font-size: 2rem !important;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem !important;
+  }
+  
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .contributor-cards {
+    flex-direction: column;
+  }
+  
+  .framework-section {
+    padding-left: 0;
+  }
+  
+  .framework-section::before {
+    display: none;
+  }
+  
+  .framework-step {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .step-number {
+    margin: 0 auto;
+  }
+  
+  /* Sidebar spacing adjustments for tablet */
+  .sidebar-navigation .nav-link {
+    padding: 0.6rem 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .findings-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .nav-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* ============================================
+   SCROLLBAR STYLING
+   ============================================ */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5A7D5A;
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+  .hero-section {
+    background: none !important;
+    padding: 1rem;
+  }
+  
+  .metric-card, 
+  .finding-card, 
+  .nav-card,
+  .step-content {
+    box-shadow: none !important;
+    border: 1px solid #ddd;
+  }
+  
+  .sidebar, 
+  #TOC {
+    display: none !important;
+  }
+}
+/* ============================================
+   SIDEBAR AUTHORS - Fixed at bottom left
+   ============================================ */
+.sidebar-authors {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 0.8rem;
+}
+
+.sidebar-authors img {
+  height: 26px;
+  width: auto;
+  opacity: 0.85;
+}
+
+.sidebar-authors a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.sidebar-authors a:hover {
+  color: var(--accent-primary);
+}
+
+/* Hide on mobile */
+@media (max-width: 768px) {
+  .sidebar-authors {
+    display: none;
+  }
+}

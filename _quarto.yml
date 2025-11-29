@@ -1,0 +1,56 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Urban Happiness Prediction"
+  search: true
+  repo-url: https://github.com/yourusername/urban-happiness
+  repo-actions: [source]
+  
+  sidebar:
+    style: docked
+    background: light
+    logo: images/logo.svg
+    contents:
+      - href: index.qmd
+        text: Home
+      - href: introduction.qmd
+        text: Introduction
+      - section: "Methodology"
+        contents:
+          - href: analysis/1-data-collection.qmd
+            text: Data Collection
+          - href: analysis/2-semantic-segmentation.qmd
+            text: Semantic Segmentation
+          - href: analysis/3-pu-learning.qmd
+            text: PU Learning Model
+      - href: analysis/4-results.qmd
+        text: Results
+      - href: references.qmd
+        text: References
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-location: right
+    toc-title: "On this page"
+    # Hide all code - visitors won't see any code
+    code-fold: false
+    code-summary: "Show code"
+    code-tools: false
+    echo: false
+    # Page layout - full width
+    page-layout: full
+    grid:
+      sidebar-width: 250px
+      body-width: 1200px
+      margin-width: 200px
+
+execute:
+  freeze: auto
+  echo: false
+  warning: false
+  message: false

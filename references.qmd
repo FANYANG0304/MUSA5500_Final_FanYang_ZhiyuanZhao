@@ -1,0 +1,100 @@
+---
+title: "References"
+---
+
+## Data Sources
+
+### Primary Data
+
+**Happiness Points**
+Collected via survey from Drexel University students as part of urban experience research. Students identified locations in Philadelphia that evoked feelings of happiness.
+
+**Google Street View Imagery**
+Accessed via Google Street View API. Panoramic images (3328 × 1664 pixels) downloaded using tile-based retrieval method at zoom level 3.
+
+- Google. (2024). Street View Static API. [https://developers.google.com/maps/documentation/streetview](https://developers.google.com/maps/documentation/streetview)
+
+**U.S. Census Bureau American Community Survey**
+5-year estimates (2018-2022) at census tract level for Philadelphia County.
+
+- U.S. Census Bureau. (2023). American Community Survey 5-Year Data (2018-2022). [https://www.census.gov/programs-surveys/acs](https://www.census.gov/programs-surveys/acs)
+
+**Philadelphia Road Network**
+OpenDataPhilly street centerlines dataset.
+
+- City of Philadelphia. (2024). Street Centerlines. [https://opendataphilly.org/datasets/street-centerlines/](https://opendataphilly.org/datasets/street-centerlines/)
+
+---
+
+## Methods & Models
+
+### Semantic Segmentation
+
+**SegFormer**
+Xie, E., Wang, W., Yu, Z., Anandkumar, A., Alvarez, J. M., & Luo, P. (2021). SegFormer: Simple and efficient design for semantic segmentation with transformers. *Advances in Neural Information Processing Systems*, 34, 12077-12090.
+
+- Model: nvidia/segformer-b0-finetuned-ade-512-512
+- Hugging Face: [https://huggingface.co/nvidia/segformer-b0-finetuned-ade-512-512](https://huggingface.co/nvidia/segformer-b0-finetuned-ade-512-512)
+
+**ADE20K Dataset**
+Zhou, B., Zhao, H., Puig, X., Fidler, S., Barriuso, A., & Torralba, A. (2017). Scene parsing through ADE20K dataset. *Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition*, 633-641.
+
+### Positive-Unlabeled Learning
+
+Bekker, J., & Davis, J. (2020). Learning from positive and unlabeled data: A survey. *Machine Learning*, 109(4), 719-760.
+
+Elkan, C., & Noto, K. (2008). Learning classifiers from only positive and unlabeled data. *Proceedings of the 14th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining*, 213-220.
+
+---
+
+## Urban Theory
+
+### Environmental Psychology
+
+Kaplan, R., & Kaplan, S. (1989). *The Experience of Nature: A Psychological Perspective*. Cambridge University Press.
+
+Ulrich, R. S. (1984). View through a window may influence recovery from surgery. *Science*, 224(4647), 420-421.
+
+### Urban Vitality
+
+Jacobs, J. (1961). *The Death and Life of Great American Cities*. Random House.
+
+Gehl, J. (2011). *Life Between Buildings: Using Public Space*. Island Press.
+
+### Street-Level Imagery Analysis
+
+Li, X., Zhang, C., Li, W., Ricard, R., Meng, Q., & Zhang, W. (2015). Assessing street-level urban greenery using Google Street View and a modified green view index. *Urban Forestry & Urban Greening*, 14(3), 675-685.
+
+Rzotkiewicz, A., Pearson, A. L., Dougherty, B. V., Shortridge, A., & Wilson, N. (2018). Systematic review of the use of Google Street View in health research: Major themes, strengths, weaknesses and possibilities for future research. *Health & Place*, 52, 240-246.
+
+---
+
+## Software & Tools
+
+### Python Libraries
+
+- **GeoPandas**: Jordahl, K., et al. (2020). geopandas/geopandas: v0.8.1. Zenodo.
+- **Transformers**: Wolf, T., et al. (2020). Transformers: State-of-the-art natural language processing. *EMNLP 2020*.
+- **Scikit-learn**: Pedregosa, F., et al. (2011). Scikit-learn: Machine learning in Python. *JMLR*, 12, 2825-2830.
+- **PyTorch**: Paszke, A., et al. (2019). PyTorch: An imperative style, high-performance deep learning library. *NeurIPS 2019*.
+
+### Visualization
+
+- **Matplotlib**: Hunter, J. D. (2007). Matplotlib: A 2D graphics environment. *Computing in Science & Engineering*, 9(3), 90-95.
+- **Seaborn**: Waskom, M. L. (2021). seaborn: statistical data visualization. *JOSS*, 6(60), 3021.
+
+### Website
+
+Built with [Quarto](https://quarto.org/) open-source scientific publishing system.
+
+---
+
+## Acknowledgments
+
+This research was conducted as part of MUSA 5500: Geospatial Data Science In Python at the University of Pennsylvania, Weitzman School of Design.
+
+Special thanks to the Drexel University students who participated in the happiness point survey, providing the foundation for this analysis.
+
+---
+
+*← Return to [Home](index.qmd)*

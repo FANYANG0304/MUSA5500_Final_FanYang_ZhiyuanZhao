@@ -1,0 +1,322 @@
+---
+title: ""
+page-layout: full
+toc: true
+toc-location: right
+toc-title: "On this page"
+title-block-style: none
+---
+
+<!-- Hero Section - Pure HTML -->
+<div class="hero-section">
+<div class="hero-content">
+
+<p style="font-size: 48px; font-weight: bold; color: #2D2D2D; margin-bottom: 10px;">Traces of Joy</p>
+
+<p style="font-size: 20px; color: #5A5A5A; font-style: italic; margin-bottom: 20px;">Exploring Urban Happiness through Machine Vision and Human Feeling</p>
+
+<p style="font-size: 16px; color: #5A5A5A; max-width: 650px; margin-bottom: 30px; line-height: 1.7;">
+What makes a person truly happy? It might be a shared meal with friends, or simply standing in a place that feels right. This project maps the emotional geography of Philadelphia—combining street-view imagery, semantic segmentation, and machine learning to understand what makes urban environments feel "happy."
+
+<u>"A lot of things need fixing in Philly, but there are a lot of good things here."</u>
+</p>
+
+<div class="hero-buttons">
+<a href="#research-framework" style="display: inline-block; padding: 12px 28px; border-radius: 8px; font-weight: 500; text-decoration: none; background: #6B8E6B; color: white !important;">View Methodology</a>
+<a href="analysis/4-results.qmd" style="display: inline-block; padding: 12px 28px; border-radius: 8px; font-weight: 500; text-decoration: none; background: transparent; color: #6B8E6B !important; border: 2px solid #6B8E6B; margin-left: 10px;">Explore Results</a>
+</div>
+
+</div>
+</div>
+
+<!-- Key Metrics Section -->
+::: {.metrics-section}
+::: {.metrics-grid}
+
+::: {.metric-card}
+::: {.metric-icon}
+😊
+:::
+::: {.metric-value}
+28
+:::
+::: {.metric-label}
+Happiness Points
+:::
+::: {.metric-desc}
+Identified by Drexel University students
+:::
+:::
+
+::: {.metric-card}
+::: {.metric-icon}
+📍
+:::
+::: {.metric-value}
+40,000+
+:::
+::: {.metric-label}
+Sampling Points
+:::
+::: {.metric-desc}
+Across Philadelphia streets
+:::
+:::
+
+::: {.metric-card}
+::: {.metric-icon}
+🎯
+:::
+::: {.metric-value}
+0.968
+:::
+::: {.metric-label}
+Model AUC
+:::
+::: {.metric-desc}
+Logistic Regression performance
+:::
+:::
+
+::: {.metric-card}
+::: {.metric-icon}
+🏙️
+:::
+::: {.metric-value}
+14
+:::
+::: {.metric-label}
+Features
+:::
+::: {.metric-desc}
+Visual + Socioeconomic variables
+:::
+:::
+
+:::
+:::
+
+---
+
+## Abstract {#abstract}
+
+::: {.abstract-box}
+The Swiss psychoanalyst Carl Jung wrote extensively about the relationship between our inner world and the external environment, suggesting that this connection is vital to psychological health. Across cultures and histories, "happy places" share certain universal features—they are often safe, aesthetically pleasing, socially engaging, and meaningful.
+
+This study explores whether these emotional patterns can be recognized from a city's visual appearance. Using 28 happiness points identified by Drexel University students and approximately 40,000 road sampling points across Philadelphia, we employ a **Positive-Unlabeled (PU) Learning** approach that treats unlabeled locations as potentially happy rather than definitively unhappy. We extract visual features from Google Street View panoramic imagery using semantic segmentation (SegFormer) and combine them with Census tract-level socioeconomic variables to build predictive models.
+
+The result is an emotional geography of Philadelphia—a map not of buildings or roads, but of feelings.
+:::
+
+---
+
+## Key Findings {#key-findings}
+
+::: {.findings-grid}
+
+::: {.finding-card .positive}
+::: {.finding-icon}
+✓
+:::
+::: {.finding-content}
+**Positive Predictors**
+
+Building density, sky visibility, and education levels positively predict happiness — suggesting urban vitality matters.
+:::
+:::
+
+::: {.finding-card .negative}
+::: {.finding-icon}
+✗
+:::
+::: {.finding-content}
+**Negative Predictors**
+
+Owner-occupancy rate, road coverage, and poverty rate are negative predictors — challenging conventional assumptions.
+:::
+:::
+
+::: {.finding-card .insight}
+::: {.finding-icon}
+💡
+:::
+::: {.finding-content}
+**Key Insight**
+
+Rental-heavy urban areas may offer more social opportunities and public amenities than owner-occupied suburbs.
+:::
+:::
+
+:::
+
+---
+
+## Research Framework {#research-framework}
+
+::: {.framework-section}
+
+::: {.framework-step}
+::: {.step-number}
+01
+:::
+::: {.step-content}
+### Data Collection
+Sampling points generated every 200m along Philadelphia streets. GSV panoramic images collected via Google Maps API with 20-process parallel downloading.
+:::
+:::
+
+::: {.framework-step}
+::: {.step-number}
+02
+:::
+::: {.step-content}
+### Semantic Segmentation
+SegFormer-B0 model extracts 6 visual features: sky ratio, green view index, building ratio, road ratio, vehicle ratio, and person ratio.
+:::
+:::
+
+::: {.framework-step}
+::: {.step-number}
+03
+:::
+::: {.step-content}
+### Census Integration
+ACS 5-year estimates provide socioeconomic context: income, education, demographics, housing characteristics at tract level.
+:::
+:::
+
+::: {.framework-step}
+::: {.step-number}
+04
+:::
+::: {.step-content}
+### PU Learning Model
+Positive-Unlabeled learning framework with Logistic Regression and Random Forest, using 5-fold cross-validation.
+:::
+:::
+
+:::
+
+---
+
+## Preview: Feature Importance {#preview}
+
+::: {.preview-section}
+::: {.preview-text}
+Our analysis reveals which urban characteristics most strongly predict happiness. The visualization shows standardized coefficients from the logistic regression model.
+
+**Top Positive Factors:**
+
+- Building Ratio (+1.00)
+- College Education (+0.70)
+- Sky Visibility (+0.58)
+
+**Top Negative Factors:**
+
+- Owner Occupancy (-2.10)
+- Poverty Rate (-1.28)
+- Road Coverage (-1.23)
+
+[See Full Results →](analysis/4-results.qmd)
+:::
+
+::: {.preview-image}
+![Feature Effects on Happiness](images/lollipop_chart.png){.preview-chart}
+:::
+:::
+
+---
+
+## Navigation {#navigation}
+
+::: {.nav-cards}
+
+::: {.nav-card}
+### 📖 Introduction
+Background on urban happiness research and the Philadelphia context.
+
+[Read More →](introduction.qmd)
+:::
+
+::: {.nav-card}
+### 📊 Methodology
+Detailed technical approach including data pipeline and model architecture.
+
+[Explore →](analysis/1-data-collection.qmd)
+:::
+
+::: {.nav-card}
+### 📈 Results
+Complete findings, visualizations, and interpretation of model outputs.
+
+[View Results →](analysis/4-results.qmd)
+:::
+
+::: {.nav-card}
+### 📚 References
+Academic sources and data documentation.
+
+[See References →](references.qmd)
+:::
+
+:::
+
+---
+
+::: {.contributor-section}
+
+## Contributors
+
+::: {.contributor-cards}
+
+::: {.contributor-card}
+::: {.contributor-avatar}
+FY
+:::
+::: {.contributor-info}
+**Fan Yang**
+
+MUSA Student
+
+Weitzman School of Design, University of Pennsylvania
+:::
+:::
+
+::: {.contributor-card}
+::: {.contributor-avatar}
+ZZ
+:::
+::: {.contributor-info}
+**Zhiyuan Zhao**
+
+MUSA Student
+
+Weitzman School of Design, University of Pennsylvania
+:::
+:::
+
+:::
+
+::: {.project-info}
+**Course:** MUSA 5500 — Geospatial Data Science In Python
+
+**Repository:** [urban-happiness-prediction](https://github.com/yourusername/urban-happiness)
+:::
+
+:::
+
+---
+
+::: {.closing-quote}
+:::
+
+::: {.keywords-section}
+**Keywords:**
+[Urban Happiness]{.tag} [Street View Imagery]{.tag} [Semantic Segmentation]{.tag} [PU Learning]{.tag} [Spatial Analytics]{.tag} [Urban Planning]{.tag} [Philadelphia]{.tag} [Machine Learning]{.tag}
+:::
+
+<!-- Fixed Authors Panel -->
+<div class="sidebar-authors">
+<div><img src="images/upenn.jpg" alt="Penn" style="height: 26px;"></div>
+<div><a href="#contributors">Fan Yang & Zhiyuan Zhao</a></div>
+</div>
