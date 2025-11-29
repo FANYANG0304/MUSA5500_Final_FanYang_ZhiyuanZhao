@@ -11,7 +11,6 @@ website:
   sidebar:
     style: docked
     background: light
-    logo: images/logo.svg
     contents:
       - href: index.qmd
         text: Home
