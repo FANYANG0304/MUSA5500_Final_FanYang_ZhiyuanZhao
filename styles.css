@@ -945,6 +945,7 @@ hr {
   font-size: 0.95rem;
   margin-bottom: 1rem;
   line-height: 1.6;
+  text-align: left !important;
 }
 
 .nav-card a {
