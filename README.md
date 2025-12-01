@@ -68,7 +68,7 @@ MUSA5500_Final_FanYang_ZhiyuanZhao/
 
 **Note:** Due to the large volume of Google Street View imagery data (~40,000 panoramas), all data files are stored on Google Drive:
 
-📁 [**Google Drive Data Folder**](https://drive.google.com/drive/folders/YOUR_FOLDER_ID)
+📁 [**Google Drive Data Folder**](https://drive.google.com/file/d/1kpzX5mKrjTFOktLkOwL1HTqwxIsuO3at/view?usp=drive_link)
 
 The data folder contains:
 - `sampling_points/` - Generated sampling points shapefile
