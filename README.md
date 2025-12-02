@@ -21,7 +21,7 @@ Using 28 happiness points identified by Drexel University students as positive s
 | Happiness Points | 28 |
 | Sampling Points | 40,000+ |
 | Model AUC | 0.968 |
-| Features | 14 (Visual + Socioeconomic) |
+| Features | 13 (Visual + Socioeconomic) |
 
 ## Authors
 
