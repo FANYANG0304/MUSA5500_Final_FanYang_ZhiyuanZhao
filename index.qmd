@@ -83,7 +83,7 @@ Logistic Regression performance
 🏙️
 :::
 ::: {.metric-value}
-14
+13
 :::
 ::: {.metric-label}
 Features
