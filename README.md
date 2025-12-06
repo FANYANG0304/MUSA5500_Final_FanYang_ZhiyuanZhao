@@ -3,6 +3,7 @@
 **Exploring Urban Happiness through Machine Vision and Human Feeling**
 
 [![Project Website](https://img.shields.io/badge/Project-Website-green)](https://fanyang0304.github.io/MUSA5500_Final_FanYang_ZhiyuanZhao/)
+[![Final Report](https://img.shields.io/badge/Final-Report-blue)](Final_Report-Fan_Yang&Zhiyuan_Zhao.pdf)
 
 ---
 
@@ -55,12 +56,17 @@ MUSA5500_Final_FanYang_ZhiyuanZhao/
 │   ├── 3-pu-learning.qmd
 │   └── 4-results.qmd
 │
+├── data/                            # Local data files
 ├── images/                          # Images and visualizations
-├── styles.css                       # Custom CSS styling
+├── docs/                            # Generated website files
+│
 ├── _quarto.yml                      # Quarto configuration
 ├── index.qmd                        # Homepage
 ├── introduction.qmd                 # Introduction page
 ├── references.qmd                   # References page
+├── styles.css                       # Custom CSS styling
+│
+├── Final_Report-Fan_Yang&Zhiyuan_Zhao.pdf  # Final report
 └── README.md                        # This file
 ```
 
