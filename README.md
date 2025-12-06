@@ -3,7 +3,7 @@
 **Exploring Urban Happiness through Machine Vision and Human Feeling**
 
 [![Project Website](https://img.shields.io/badge/Project-Website-green)](https://fanyang0304.github.io/MUSA5500_Final_FanYang_ZhiyuanZhao/)
-[![Final Report](https://img.shields.io/badge/Final-Report-blue)](Final_Report-Fan_Yang&Zhiyuan_Zhao.pdf)
+[![Final Report](https://img.shields.io/badge/Final-Report-blue)](Final_Report-Fan_Yang_Zhiyuan_Zhao.pdf)
 
 ---
 
